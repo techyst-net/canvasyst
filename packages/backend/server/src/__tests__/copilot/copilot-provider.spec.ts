@@ -66,7 +66,7 @@ providerTest(
   'managed text and object routes satisfy the public SSE contract',
   async t => {
     const { app, runtime } = t.context;
-    await assertManagedRoute(runtime, 'chat.default', 'Chat With AFFiNE AI');
+    await assertManagedRoute(runtime, 'chat.default', 'Chat With Zeshan AI');
     await app.signupV1();
     const workspace = await createWorkspace(app);
 
@@ -74,12 +74,12 @@ providerTest(
       app,
       workspace.id,
       randomUUID(),
-      'Chat With AFFiNE AI'
+      'Chat With Zeshan AI'
     );
     const textToken = await createCopilotMessage(
       app,
       textSession,
-      'Explain AFFiNE in one sentence.'
+      'Explain Zeshan in one sentence.'
     );
     t.truthy((await chatWithText(app, textSession, textToken)).trim());
 
@@ -87,12 +87,12 @@ providerTest(
       app,
       workspace.id,
       randomUUID(),
-      'Chat With AFFiNE AI'
+      'Chat With Zeshan AI'
     );
     const objectToken = await createCopilotMessage(
       app,
       objectSession,
-      'Explain AFFiNE in one sentence.'
+      'Explain Zeshan in one sentence.'
     );
     const events = sse2array(
       await chatWithStreamObject(app, objectSession, objectToken)
@@ -112,7 +112,7 @@ providerTest(
     const workspace = await createWorkspace(app);
     const options = { user: user.id, workspace: workspace.id };
 
-    const embeddings = await runtime.embed('route-selected', ['AFFiNE'], {
+    const embeddings = await runtime.embed('route-selected', ['Zeshan'], {
       ...options,
       featureKind: 'embedding',
     });
@@ -124,7 +124,7 @@ providerTest(
       {
         query: 'collaborative editor',
         candidates: [
-          { id: 'relevant', text: 'AFFiNE is a collaborative editor.' },
+          { id: 'relevant', text: 'Zeshan is a collaborative editor.' },
           { id: 'irrelevant', text: 'A recipe for apple pie.' },
         ],
       },
@@ -174,7 +174,7 @@ providerTest(
     const actionToken = await createCopilotMessage(
       app,
       actionSession,
-      'AFFiNE product architecture'
+      'Zeshan product architecture'
     );
     const actionEvents = sse2array(
       await chatWithActionStream(app, actionSession, {

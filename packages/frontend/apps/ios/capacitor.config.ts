@@ -13,14 +13,14 @@ interface AppConfig {
 }
 
 const config: CapacitorConfig & AppConfig = {
-  appId: 'app.affine.pro',
-  appName: 'AFFiNE',
+  appId: 'zeshan.local',
+  appName: 'Zeshan',
   webDir: 'dist',
   affineVersion: packageJson.version,
   ios: {
-    scheme: 'AFFiNE',
+    scheme: 'Zeshan',
     path: '.',
-    appendUserAgent: `iOS AFFiNE/${packageJson.version}`,
+    appendUserAgent: `iOS Zeshan/${packageJson.version}`,
     webContentsDebuggingEnabled: true,
     // Silence Capacitor's bridge logging (⚡️ TO JS / ⚡️ To Native -> / ⚡️ [log]).
     loggingBehavior: 'none',

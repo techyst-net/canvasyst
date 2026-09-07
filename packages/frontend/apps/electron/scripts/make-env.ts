@@ -17,7 +17,7 @@ const ROOT = path.resolve(__dirname, '..');
 const envBuildType = (process.env.BUILD_TYPE || 'canary').trim().toLowerCase();
 const buildType = ReleaseTypeSchema.parse(envBuildType);
 const stableBuild = buildType === 'stable';
-const productName = !stableBuild ? `AFFiNE-${buildType}` : 'AFFiNE';
+const productName = !stableBuild ? `Zeshan-${buildType}` : 'Zeshan';
 const icoPath = path.join(
   ROOT,
   !stableBuild
@@ -44,7 +44,10 @@ const icnsPath = path.join(
 
 const iconPngPath = path.join(ROOT, './resources/icons/icon.png');
 
-const iconUrl = `https://cdn.affine.pro/app-icons/icon_${buildType}.ico`;
+// Squirrel (Windows) fetches the shortcut icon over HTTP at install time,
+// so this must be a URL you host — a local path will not work. Set
+// APP_ICON_BASE_URL to the origin serving resources/icons/*.ico.
+const iconUrl = `${(process.env.APP_ICON_BASE_URL ?? 'https://zeshan.local').replace(/\/+$/, '')}/app-icons/icon_${buildType}.ico`;
 
 log(`buildType=${buildType}, productName=${productName}, icoPath=${icoPath}`);
 

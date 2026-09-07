@@ -9,7 +9,7 @@ import { resolveCssVariable } from './css-utils.js';
  */
 export function getBulletIconSvg(depth: number): string {
   const bulletIndex = depth % 4;
-  const blueColor = resolveCssVariable('var(--affine-blue-700)') || '#1E96EB';
+  const blueColor = resolveCssVariable('var(--affine-blue-700)') || '#6366F1';
   const bulletSvgs = [
     `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><circle cx="7" cy="12" r="3" fill="${blueColor}"/></svg>`,
     `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M7 14.25C8.243 14.25 9.25 13.243 9.25 12C9.25 10.757 8.243 9.75 7 9.75C5.757 9.75 4.75 10.757 4.75 12C4.75 13.243 5.757 14.25 7 14.25ZM7 15C8.657 15 10 13.657 10 12C10 10.343 8.657 9 7 9C5.343 9 4 10.343 4 12C4 13.657 5.343 15 7 15Z" fill="${blueColor}" fill-rule="evenodd"/></svg>`,
@@ -24,7 +24,7 @@ export function getBulletIconSvg(depth: number): string {
  */
 export function getCheckboxIconSvg(checked: boolean): string {
   if (checked) {
-    return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M3.25 6C3.25 4.48122 4.48122 3.25 6 3.25H18C19.5188 3.25 20.75 4.48122 20.75 6V18C20.75 19.5188 19.5188 20.75 18 20.75H6C4.48122 20.75 3.25 19.5188 3.25 18V6ZM16.5303 9.53033C16.8232 9.23744 16.8232 8.76256 16.5303 8.46967C16.2374 8.17678 15.7626 8.17678 15.4697 8.46967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.5303 9.53033Z" fill="#1E96EB" fill-rule="evenodd"/></svg>';
+    return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M3.25 6C3.25 4.48122 4.48122 3.25 6 3.25H18C19.5188 3.25 20.75 4.48122 20.75 6V18C20.75 19.5188 19.5188 20.75 18 20.75H6C4.48122 20.75 3.25 19.5188 3.25 18V6ZM16.5303 9.53033C16.8232 9.23744 16.8232 8.76256 16.5303 8.46967C16.2374 8.17678 15.7626 8.17678 15.4697 8.46967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.5303 9.53033Z" fill="#6366F1" fill-rule="evenodd"/></svg>';
   } else {
     return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M6 3.25C4.48122 3.25 3.25 4.48122 3.25 6V18C3.25 19.5188 4.48122 20.75 6 20.75H18C19.5188 20.75 20.75 19.5188 20.75 18V6C20.75 4.48122 19.5188 3.25 18 3.25H6ZM4.75 6C4.75 5.30964 5.30964 4.75 6 4.75H18C18.6904 4.75 19.25 5.30964 19.25 6V18C19.25 18.6904 18.6904 19.25 18 19.25H6C5.30964 19.25 4.75 18.6904 4.75 18V6Z" fill="#666666" fill-rule="evenodd"/></svg>';
   }

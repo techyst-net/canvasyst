@@ -10,7 +10,7 @@ export const relatedLinks = [
   {
     icon: <GithubIcon />,
     title: 'GitHub',
-    link: 'https://github.com/toeverything/AFFiNE',
+    link: 'https://github.com/toeverything/Zeshan',
   },
   {
     icon: <TwitterIcon />,
@@ -30,6 +30,6 @@ export const relatedLinks = [
   {
     icon: <RedditIcon />,
     title: 'Reddit',
-    link: 'https://www.reddit.com/r/Affine/',
+    link: 'https://www.reddit.com/r/Zeshan/',
   },
 ];

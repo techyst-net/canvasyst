@@ -90,7 +90,7 @@ class TrayState implements Disposable {
     .resize({ width: 18, height: 18 });
 
   // tray's tooltip
-  tooltip: string = 'AFFiNE';
+  tooltip: string = 'Zeshan';
 
   constructor() {
     this.icon.setTemplateImage(true);
@@ -252,9 +252,9 @@ class TrayState implements Disposable {
       key: 'secondary',
       getConfig: () => [
         {
-          label: 'Open AFFiNE',
+          label: 'Open Zeshan',
           click: () => {
-            logger.info('User action: Open AFFiNE');
+            logger.info('User action: Open Zeshan');
             activateMainWindow();
           },
         },
@@ -279,9 +279,9 @@ class TrayState implements Disposable {
         },
         'separator',
         {
-          label: 'Quit AFFiNE Completely...',
+          label: 'Quit Zeshan Completely...',
           click: () => {
-            logger.info('User action: Quit AFFiNE Completely');
+            logger.info('User action: Quit Zeshan Completely');
             app.quit();
           },
         },

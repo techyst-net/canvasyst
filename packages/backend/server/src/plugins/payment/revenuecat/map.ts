@@ -8,15 +8,15 @@ export interface ProductMapping {
 
 // default whitelist mapping per PRD
 export const DEFAULT_PRODUCT_MAP: Record<string, ProductMapping> = {
-  'app.affine.pro.Monthly': {
+  'zeshan.local.Monthly': {
     plan: SubscriptionPlan.Pro,
     recurring: SubscriptionRecurring.Monthly,
   },
-  'app.affine.pro.Annual': {
+  'zeshan.local.Annual': {
     plan: SubscriptionPlan.Pro,
     recurring: SubscriptionRecurring.Yearly,
   },
-  'app.affine.pro.ai.Annual': {
+  'zeshan.local.ai.Annual': {
     plan: SubscriptionPlan.AI,
     recurring: SubscriptionRecurring.Yearly,
   },

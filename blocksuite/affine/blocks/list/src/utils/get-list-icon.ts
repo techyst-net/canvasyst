@@ -60,7 +60,7 @@ export function getListIcon(
       >
         ${
           model.props.checked
-            ? CheckBoxCheckSolidIcon({ style: 'color: #1E96EB' })
+            ? CheckBoxCheckSolidIcon({ style: 'color: #6366F1' })
             : CheckBoxUnIcon()
         }
       </div>`;

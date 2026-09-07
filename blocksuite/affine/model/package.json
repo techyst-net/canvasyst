@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-model",
-  "description": "Models for BlockSuite in Affine.",
+  "description": "Models for BlockSuite in Zeshan.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

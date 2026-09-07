@@ -1,6 +1,6 @@
 # iOS
 
-AFFiNE iOS app.
+Zeshan iOS app.
 
 ## Build
 

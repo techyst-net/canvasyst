@@ -67,7 +67,7 @@ test('disabled copilot hides its server feature and rejects every API transport'
         app,
         workspace.id,
         randomUUID(),
-        'Chat With AFFiNE AI'
+        'Chat With Zeshan AI'
       )
     );
     await app.GET('/api/copilot/unsplash/photos').expect(403);
@@ -90,7 +90,7 @@ test('session, message, local context restriction and durable history share one 
     app,
     workspace.id,
     docId,
-    'Chat With AFFiNE AI'
+    'Chat With Zeshan AI'
   );
 
   t.deepEqual(await getCopilotSession(app, workspace.id, sessionId), {
@@ -98,7 +98,7 @@ test('session, message, local context restriction and durable history share one 
     docId,
     parentSessionId: null,
     pinned: false,
-    promptName: 'Chat With AFFiNE AI',
+    promptName: 'Chat With Zeshan AI',
   });
 
   const token = await createCopilotMessage(app, sessionId, 'hello');
@@ -136,7 +136,7 @@ test('session, message, local context restriction and durable history share one 
     app,
     randomUUID(),
     null,
-    'Chat With AFFiNE AI'
+    'Chat With Zeshan AI'
   );
   t.truthy(await createCopilotMessage(app, localSessionId, 'local hello'));
   const localContextResponse = await app
@@ -184,7 +184,7 @@ test('chat and history endpoints reject a different user', async t => {
     app,
     workspace.id,
     randomUUID(),
-    'Chat With AFFiNE AI'
+    'Chat With Zeshan AI'
   );
   const token = await createCopilotMessage(app, sessionId, 'private');
   await app.signupV1();

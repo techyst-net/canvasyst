@@ -75,12 +75,12 @@ export class ServerConfigResolver {
       name:
         this.config.server.name ??
         (env.selfhosted
-          ? 'AFFiNE Self-hosted'
+          ? 'Zeshan Self-hosted'
           : env.namespaces.canary
-            ? 'AFFiNE Canary Cloud'
+            ? 'Zeshan Canary Cloud'
             : env.namespaces.beta
-              ? 'AFFiNE Beta Cloud'
-              : 'AFFiNE Cloud'),
+              ? 'Zeshan Beta Cloud'
+              : 'Zeshan Cloud'),
       version: env.version,
       baseUrl: this.url.requestBaseUrl,
       type: env.DEPLOYMENT_TYPE,
@@ -117,7 +117,7 @@ export class ServerConfigResolver {
     }
 
     const channel = RELEASE_CHANNEL_MAP.get(env.NAMESPACE) ?? 'stable';
-    const url = `https://affine.pro/api/worker/releases?channel=${channel}`;
+    const url = `https://zeshan.local${channel}`;
 
     try {
       const response = await fetch(url, {

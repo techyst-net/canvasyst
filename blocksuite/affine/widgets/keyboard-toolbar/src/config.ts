@@ -1082,7 +1082,7 @@ const textSubToolbarConfig: KeyboardSubToolbarConfig = {
 export const defaultKeyboardToolbarConfig: KeyboardToolbarConfig = {
   items: [
     moreToolPanel,
-    // TODO(@L-Sun): add ai function in AFFiNE side
+    // TODO(@L-Sun): add ai function in Zeshan side
     // { icon: AiIcon(iconStyle) },
     textSubToolbarConfig,
     {

@@ -277,7 +277,7 @@ mod tests {
       QuotaPolicy::Internal
     ));
     assert!(matches!(
-      quota_policy(&prompt_slot, Some("Chat With AFFiNE AI")),
+      quota_policy(&prompt_slot, Some("Chat With Zeshan AI")),
       QuotaPolicy::Metered
     ));
     assert!(matches!(

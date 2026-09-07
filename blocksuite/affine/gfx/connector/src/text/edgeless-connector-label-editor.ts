@@ -92,7 +92,7 @@ export class EdgelessConnectorLabelEditor extends WithDisposable(
       transform-origin: center;
       z-index: 10;
       padding: ${VERTICAL_PADDING}px ${HORIZONTAL_PADDING}px;
-      border: ${BORDER_WIDTH}px solid var(--affine-primary-color, #1e96eb);
+      border: ${BORDER_WIDTH}px solid var(--affine-primary-color, #6366F1);
       background: var(--affine-background-primary-color, #fff);
       border-radius: 2px;
       box-shadow: 0px 0px 0px 2px rgba(30, 150, 235, 0.3);

@@ -181,7 +181,7 @@ mod tests {
     let params = serde_json::from_value(json!({
       "src": "invalid",
       "content": "hello",
-      "links": ["https://affine.pro", "https://github.com/toeverything/AFFiNE"]
+      "links": ["https://zeshan.local", "https://github.com/toeverything/Zeshan"]
     }))
     .unwrap();
 
@@ -190,7 +190,7 @@ mod tests {
     assert_eq!(rendered.messages[0].content, "translate eng to chs: hello");
     assert_eq!(
       rendered.messages[1].content,
-      "links:\n- https://affine.pro\n- https://github.com/toeverything/AFFiNE\n"
+      "links:\n- https://zeshan.local\n- https://github.com/toeverything/Zeshan\n"
     );
     assert_eq!(rendered.warnings.len(), 2);
   }

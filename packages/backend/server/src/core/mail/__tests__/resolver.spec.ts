@@ -52,7 +52,7 @@ test('sendTestEmail rejects non-admin users before SMTP or ledger', async t => {
         username: 'user',
         password: 'password',
         ignoreTLS: false,
-        sender: 'AFFiNE <noreply@example.com>',
+        sender: 'Zeshan <noreply@example.com>',
       },
     },
   });

@@ -19,7 +19,7 @@ const RightSidebarOpenIcon = (props: React.SVGProps<SVGSVGElement>) => (
       clipRule="evenodd"
     />
     <path
-      fill="#1E96EB"
+      fill="#6366F1"
       d="M15.25 6h3.25a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-3.25z"
     />
   </svg>

@@ -38,7 +38,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
               ? 'http://localhost:8080'
               : location.origin,
             config: {
-              serverName: 'AFFiNE Cloud',
+              serverName: 'Zeshan Cloud',
               features: [
                 ServerFeature.Indexer,
                 ServerFeature.Copilot,
@@ -51,7 +51,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                 OAuthProviderType.Google,
                 OAuthProviderType.Apple,
               ],
-              type: ServerDeploymentType.Affine,
+              type: ServerDeploymentType.Zeshan,
               credentialsRequirement: {
                 password: {
                   minLength: 8,
@@ -67,11 +67,11 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
               id: 'affine-cloud',
               baseUrl: BUILD_CONFIG.isNative
                 ? BUILD_CONFIG.isIOS
-                  ? 'https://apple.getaffineapp.com'
-                  : 'https://app.affine.pro'
+                  ? 'https://zeshan.local'
+                  : 'https://zeshan.local'
                 : location.origin,
               config: {
-                serverName: 'AFFiNE Cloud',
+                serverName: 'Zeshan Cloud',
                 features: [
                   ServerFeature.Indexer,
                   ServerFeature.Copilot,
@@ -84,7 +84,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                   OAuthProviderType.Google,
                   OAuthProviderType.Apple,
                 ],
-                type: ServerDeploymentType.Affine,
+                type: ServerDeploymentType.Zeshan,
                 credentialsRequirement: {
                   password: {
                     minLength: 8,
@@ -100,11 +100,11 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                 id: 'affine-cloud',
                 baseUrl: BUILD_CONFIG.isNative
                   ? BUILD_CONFIG.isIOS
-                    ? 'https://apple.getaffineapp.com'
-                    : 'https://insider.affine.pro'
+                    ? 'https://zeshan.local'
+                    : 'https://zeshan.local'
                   : location.origin,
                 config: {
-                  serverName: 'AFFiNE Cloud',
+                  serverName: 'Zeshan Cloud',
                   features: [
                     ServerFeature.Indexer,
                     ServerFeature.Copilot,
@@ -117,7 +117,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                     OAuthProviderType.Google,
                     OAuthProviderType.Apple,
                   ],
-                  type: ServerDeploymentType.Affine,
+                  type: ServerDeploymentType.Zeshan,
                   credentialsRequirement: {
                     password: {
                       minLength: 8,
@@ -131,9 +131,9 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
             ? [
                 {
                   id: 'affine-cloud',
-                  baseUrl: 'https://insider.affine.pro',
+                  baseUrl: 'https://zeshan.local',
                   config: {
-                    serverName: 'AFFiNE Cloud',
+                    serverName: 'Zeshan Cloud',
                     features: [
                       ServerFeature.Indexer,
                       ServerFeature.Copilot,
@@ -146,7 +146,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                       OAuthProviderType.Google,
                       OAuthProviderType.Apple,
                     ],
-                    type: ServerDeploymentType.Affine,
+                    type: ServerDeploymentType.Zeshan,
                     credentialsRequirement: {
                       password: {
                         minLength: 8,
@@ -161,10 +161,10 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                   {
                     id: 'affine-cloud',
                     baseUrl: BUILD_CONFIG.isNative
-                      ? 'https://affine.fail'
+                      ? 'https://zeshan.local'
                       : location.origin,
                     config: {
-                      serverName: 'AFFiNE Cloud',
+                      serverName: 'Zeshan Cloud',
                       features: [
                         ServerFeature.Indexer,
                         ServerFeature.Copilot,
@@ -177,7 +177,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                         OAuthProviderType.Google,
                         OAuthProviderType.Apple,
                       ],
-                      type: ServerDeploymentType.Affine,
+                      type: ServerDeploymentType.Zeshan,
                       credentialsRequirement: {
                         password: {
                           minLength: 8,
@@ -197,10 +197,10 @@ export type TelemetryChannel =
   | 'local';
 
 const OFFICIAL_TELEMETRY_ENDPOINTS: Record<TelemetryChannel, string> = {
-  stable: 'https://app.affine.pro',
-  beta: 'https://insider.affine.pro',
-  internal: 'https://insider.affine.pro',
-  canary: 'https://affine.fail',
+  stable: 'https://zeshan.local',
+  beta: 'https://zeshan.local',
+  internal: 'https://zeshan.local',
+  canary: 'https://zeshan.local',
   local: 'http://localhost:8080',
 };
 

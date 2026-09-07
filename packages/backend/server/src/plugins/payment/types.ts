@@ -113,7 +113,7 @@ export interface LookupKey {
 
 export interface KnownStripeInvoice {
   /**
-   * User in AFFiNE system.
+   * User in Zeshan system.
    */
   userId?: string;
 
@@ -137,7 +137,7 @@ export interface KnownStripeInvoice {
 
 export interface KnownStripeSubscription {
   /**
-   * User in AFFiNE system.
+   * User in Zeshan system.
    */
   userId?: string;
 
@@ -181,48 +181,48 @@ export const DEFAULT_PRICES = new Map([
   [
     `${SubscriptionPlan.Pro}_${SubscriptionRecurring.Monthly}`,
     {
-      product: 'AFFiNE Pro',
+      product: 'Zeshan Pro',
       price: 799,
     },
   ],
   [
     `${SubscriptionPlan.Pro}_${SubscriptionRecurring.Yearly}`,
     {
-      product: 'AFFiNE Pro',
+      product: 'Zeshan Pro',
       price: 8100,
     },
   ],
   [
     `${SubscriptionPlan.Pro}_${SubscriptionRecurring.Lifetime}`,
     {
-      product: 'AFFiNE Pro Believer',
+      product: 'Zeshan Pro Believer',
       price: 49900,
     },
   ],
   // ai
   [
     `${SubscriptionPlan.AI}_${SubscriptionRecurring.Yearly}`,
-    { product: 'AFFiNE AI', price: 10680 },
+    { product: 'Zeshan AI', price: 10680 },
   ],
 
   // team
   [
     `${SubscriptionPlan.Team}_${SubscriptionRecurring.Monthly}`,
-    { product: 'AFFiNE Team(per seat)', price: 1200 },
+    { product: 'Zeshan Team(per seat)', price: 1200 },
   ],
   [
     `${SubscriptionPlan.Team}_${SubscriptionRecurring.Yearly}`,
-    { product: 'AFFiNE Team(per seat)', price: 12000 },
+    { product: 'Zeshan Team(per seat)', price: 12000 },
   ],
 
   // selfhost team
   [
     `${SubscriptionPlan.SelfHostedTeam}_${SubscriptionRecurring.Monthly}`,
-    { product: 'AFFiNE Self-hosted Team(per seat)', price: 1200 },
+    { product: 'Zeshan Self-hosted Team(per seat)', price: 1200 },
   ],
   [
     `${SubscriptionPlan.SelfHostedTeam}_${SubscriptionRecurring.Yearly}`,
-    { product: 'AFFiNE Self-hosted Team(per seat)', price: 12000 },
+    { product: 'Zeshan Self-hosted Team(per seat)', price: 12000 },
   ],
 ]);
 

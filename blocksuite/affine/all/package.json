@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine",
-  "description": "BlockSuite for Affine",
+  "description": "BlockSuite for Zeshan",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc --build --verbose"

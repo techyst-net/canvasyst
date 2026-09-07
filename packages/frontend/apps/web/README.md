@@ -1,3 +1,3 @@
 # web
 
-AFFiNE Desktop Edition Web app.
+Zeshan Desktop Edition Web app.

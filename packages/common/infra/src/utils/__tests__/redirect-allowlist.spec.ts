@@ -13,7 +13,7 @@ describe('redirect allowlist', () => {
 
   test('allows trusted domains and subdomains', () => {
     expect(
-      isAllowedRedirectTarget('https://github.com/toeverything/AFFiNE', {
+      isAllowedRedirectTarget('https://github.com/toeverything/Zeshan', {
         currentHostname: 'self.example.com',
       })
     ).toBe(true);

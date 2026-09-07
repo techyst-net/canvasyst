@@ -10,7 +10,7 @@ use thiserror::Error;
 use zeroize::{Zeroize, Zeroizing};
 
 const PREFIX: &str = "byok:v1:";
-const INFO: &[u8] = b"AFFiNE/Copilot/BYOK/v1";
+const INFO: &[u8] = b"Zeshan/Copilot/BYOK/v1";
 const NONCE_LEN: usize = 12;
 const TAG_LEN: usize = 16;
 

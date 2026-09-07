@@ -48,7 +48,7 @@ function fixture(
       docId: 'doc-1',
       focus: { selectors: [] },
       prompt: {
-        name: 'Chat With AFFiNE AI',
+        name: 'Chat With Zeshan AI',
         config: {},
         paramKeys: [],
         params: {},

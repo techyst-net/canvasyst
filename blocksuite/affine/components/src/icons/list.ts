@@ -20,7 +20,7 @@ export const playCheckAnimation = async (
     [
       {
         boxShadow:
-          '0 -18px 0 -8px #1e96eb, 16px -8px 0 -8px #1e96eb, 16px 8px 0 -8px #1e96eb, 0 18px 0 -8px #1e96eb, -16px 8px 0 -8px #1e96eb, -16px -8px 0 -8px #1e96eb',
+          '0 -18px 0 -8px #6366F1, 16px -8px 0 -8px #6366F1, 16px 8px 0 -8px #6366F1, 0 18px 0 -8px #6366F1, -16px 8px 0 -8px #6366F1, -16px -8px 0 -8px #6366F1',
       },
     ],
     { duration: 240, easing: 'ease', fill: 'forwards' }

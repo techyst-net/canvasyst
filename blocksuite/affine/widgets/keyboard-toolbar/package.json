@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-keyboard-toolbar",
-  "description": "Affine keyboard toolbar widget.",
+  "description": "Zeshan keyboard toolbar widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

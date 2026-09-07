@@ -180,7 +180,7 @@ export class MindMapIndicatorOverlay extends Overlay {
     const points = this._generatePath();
     const color = this.themeService.getColorValue(
       '--affine-primary-color',
-      '#1E96EB',
+      '#6366F1',
       true
     );
 

@@ -17,9 +17,9 @@ export type SignUpProps = {
 export default function SignUp(props: SignUpProps) {
   return (
     <Template>
-      <Title>{`Sign up to ${props.serverName ?? 'AFFiNE'}`}</Title>
+      <Title>{`Sign up to ${props.serverName ?? 'Zeshan'}`}</Title>
       <Content>
-        <P>You are signing up to AFFiNE. Here is your code:</P>
+        <P>You are signing up to Zeshan. Here is your code:</P>
         <OnelineCodeBlock>{props.otp}</OnelineCodeBlock>
         <P>
           Alternatively, you can sign up directly by clicking the magic link
@@ -37,6 +37,6 @@ export default function SignUp(props: SignUpProps) {
 }
 
 SignUp.PreviewProps = {
-  url: 'https://app.affine.pro/magic-link?token=123456&email=test@test.com',
+  url: 'https://zeshan.local@test.com',
   otp: '123456',
 };

@@ -1,3 +1,3 @@
 # @affine/error
 
-AFFiNE error handler utilities
+Zeshan error handler utilities
