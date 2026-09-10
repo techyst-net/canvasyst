@@ -3,7 +3,7 @@
   "version": "0.27.0",
   "private": true,
   "type": "module",
-  "description": "Diff AFFiNE Yjs snapshot docs (rootdoc/folder/favorite)",
+  "description": "Diff Zeshan Yjs snapshot docs (rootdoc/folder/favorite)",
   "main": "index.ts",
   "scripts": {
     "diff": "r ./src/index.ts",

@@ -729,7 +729,7 @@ test('copilot config controls the server feature and request admission', t => {
 });
 
 const prompt: ResolvedPrompt = {
-  name: 'Chat With AFFiNE AI',
+  name: 'Chat With Zeshan AI',
   config: {},
   paramKeys: [],
   params: {},
@@ -852,7 +852,7 @@ test('chat message adapters preserve and canonicalize assistant render trace', t
         toolCallId: 'call-1',
         toolName: 'doc_read',
         args: { docId: 'doc-1' },
-        result: { markdown: '# AFFiNE' },
+        result: { markdown: '# Zeshan' },
       },
       { type: 'text-delta' as const, textDelta: 'Final answer' },
     ],
@@ -867,7 +867,7 @@ test('chat message adapters preserve and canonicalize assistant render trace', t
       toolCallId: 'call-1',
       toolName: 'doc_read',
       args: { docId: 'doc-1' },
-      result: { markdown: '# AFFiNE' },
+      result: { markdown: '# Zeshan' },
     },
     { type: 'text-delta', textDelta: 'Final answer' },
   ]);
@@ -1042,21 +1042,21 @@ test('text stream parser keeps reasoning and tool output distinct from answer te
       type: 'tool-call',
       toolCallId: 'call-1',
       toolName: 'web_search_exa',
-      input: { query: 'AFFiNE' },
+      input: { query: 'Zeshan' },
     }),
     parser.parse({
       type: 'tool-result',
       toolCallId: 'call-1',
       toolName: 'web_search_exa',
-      input: { query: 'AFFiNE' },
-      output: [{ title: 'AFFiNE', url: 'https://affine.pro' }],
+      input: { query: 'Zeshan' },
+      output: [{ title: 'Zeshan', url: 'https://affine.pro' }],
     }),
     parser.parse({ type: 'text-delta', text: 'Answer' }),
   ].join('');
 
   t.true(output.includes('Think'));
-  t.true(output.includes('Searching the web "AFFiNE"'));
-  t.true(output.includes('[AFFiNE](https://affine.pro)'));
+  t.true(output.includes('Searching the web "Zeshan"'));
+  t.true(output.includes('[Zeshan](https://affine.pro)'));
   t.true(output.endsWith('\nAnswer'));
   t.throws(
     () => parser.parse({ type: 'error', error: { message: 'failed' } }),

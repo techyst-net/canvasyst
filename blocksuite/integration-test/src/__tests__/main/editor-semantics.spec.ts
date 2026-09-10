@@ -236,11 +236,11 @@ describe('markdown/list/paragraph/quote/code/link', () => {
     const { paragraphId: linkParagraphId } = await createParagraph();
     await triggerMarkdown(
       linkParagraphId,
-      '[AFFiNE](https://affine.pro) ',
+      '[Zeshan](https://affine.pro) ',
       'link'
     );
     const linkRichText = getRichTextByBlockId(linkParagraphId);
-    expect(linkRichText.inlineEditor.yTextString).toBe('AFFiNE');
+    expect(linkRichText.inlineEditor.yTextString).toBe('Zeshan');
     expect(
       linkRichText.inlineEditor.getFormat({ index: 1, length: 0 })
     ).toMatchObject({

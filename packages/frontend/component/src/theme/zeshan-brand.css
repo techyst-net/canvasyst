@@ -1,0 +1,43 @@
+/* Zeshan brand palette.
+ *
+ * The design tokens are published in the external `@toeverything/theme`
+ * package (imported first in ./index.ts), so the accent hue cannot be changed
+ * by editing this repository's sources. These declarations load after that
+ * stylesheet and therefore win by cascade order, which retints the product
+ * without patching node_modules.
+ *
+ * Values mirror ../../../../../BRAND.md.
+ */
+
+:root,
+html[data-theme='light'],
+html[data-theme='dark'] {
+  --affine-brand-color: #6366f1;
+  --affine-primary-color: #6366f1;
+
+  /* The blue ramp doubles as the accent scale across the editor. */
+  --affine-blue: #6366f1;
+  --affine-blue-50: #eef2ff;
+  --affine-blue-100: #e0e7ff;
+  --affine-blue-200: #c7d2fe;
+  --affine-blue-300: #a5b4fc;
+  --affine-blue-400: #818cf8;
+  --affine-blue-500: #6366f1;
+  --affine-blue-600: #4f46e5;
+  --affine-blue-700: #4338ca;
+  --affine-blue-800: #3730a3;
+  --affine-blue-900: #312e81;
+
+  /* v2 token namespace used by newer editor widgets. */
+  --affine-v2-edgeless-selection-selectionMarqueeBorder: #6366f1;
+  --affine-v2-edgeless-selection-selectionMarqueeBackground: #6366f114;
+  --affine-v2-button-primary: #6366f1;
+  --affine-v2-icon-activated: #6366f1;
+  --affine-v2-text-link: #6366f1;
+}
+
+html[data-theme='dark'] {
+  --affine-brand-color: #818cf8;
+  --affine-primary-color: #818cf8;
+  --affine-blue: #818cf8;
+}

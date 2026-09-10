@@ -81,7 +81,7 @@ test('target override is all-or-nothing and preserves opaque model ids', t => {
     'terra'
   );
 
-  const route = llmGetBuiltInRouteOptions('Chat With AFFiNE AI');
+  const route = llmGetBuiltInRouteOptions('Chat With Zeshan AI');
   t.is(route?.standardDefaultTargetId, 'luna');
   t.is(route?.premiumDefaultTargetId, 'luna');
   t.deepEqual(

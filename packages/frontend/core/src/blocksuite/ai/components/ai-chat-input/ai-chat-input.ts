@@ -181,7 +181,7 @@ export class AIChatInput extends SignalWatcher(
       }
 
       .chat-input-icon[data-active='true'] {
-        background-color: #1e96eb14;
+        background-color: #6366F114;
 
         svg {
           color: ${unsafeCSSVarV2('icon/activated')};
@@ -486,7 +486,7 @@ export class AIChatInput extends SignalWatcher(
 
   protected override updated(changedProperties: PropertyValues<this>) {
     if (changedProperties.has('workspaceId')) {
-      this.aiModelService.setScope(this.workspaceId, 'Chat With AFFiNE AI');
+      this.aiModelService.setScope(this.workspaceId, 'Chat With Zeshan AI');
     }
   }
 

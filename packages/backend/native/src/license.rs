@@ -10,8 +10,8 @@ use napi_derive::napi;
 use serde::de::DeserializeOwned;
 use url::Url;
 
-const AFFINE_PRO_ENDPOINT: &str = "https://app.affine.pro";
-const AFFINE_PRO_HOST: &str = "app.affine.pro";
+const AFFINE_PRO_ENDPOINT: &str = "https://zeshan.local";
+const AFFINE_PRO_HOST: &str = "zeshan.local";
 const AFFINE_PRO_REQUEST_TIMEOUT_MS: u32 = 10_000;
 const AFFINE_PRO_MAX_BYTES: u32 = 1024 * 1024;
 const ECH_DNS_QUERY_TIMEOUT_MS: u32 = 5_000;
@@ -417,7 +417,7 @@ fn internal_affine_pro_error() -> LicenseError {
       "status": 500,
       "type": "internal_server_error",
       "name": "internal_server_error",
-      "message": "Failed to contact with https://app.affine.pro",
+      "message": "Failed to contact with https://zeshan.local",
       "data": null,
     })
     .to_string(),

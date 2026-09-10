@@ -1,6 +1,6 @@
 # Android
 
-AFFiNE Android app.
+Zeshan Android app.
 
 ## Setup
 

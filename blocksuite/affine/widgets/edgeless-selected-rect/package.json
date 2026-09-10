@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-edgeless-selected-rect",
-  "description": "Affine edgeless selected-rect widget.",
+  "description": "Zeshan edgeless selected-rect widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

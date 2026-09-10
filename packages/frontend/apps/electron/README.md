@@ -1,8 +1,8 @@
-# AFFiNE Electron App
+# Zeshan Electron App
 
 ## Development
 
-To run AFFiNE Desktop Client Application locally, run the following commands:
+To run Zeshan Desktop Client Application locally, run the following commands:
 
 ```sh
 # in repo root

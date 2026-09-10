@@ -205,10 +205,10 @@ export class DocRendererController {
     }
 
     const title = opts?.title
-      ? htmlSanitize(`${opts.title} | AFFiNE`)
-      : 'AFFiNE';
+      ? htmlSanitize(`${opts.title} | Zeshan`)
+      : 'Zeshan';
     const summary = opts ? htmlSanitize(opts.summary) : assets.description;
-    const image = opts?.avatar ?? 'https://affine.pro/og.jpeg';
+    const image = opts?.avatar ?? 'https://zeshan.local';
 
     // TODO(@forehalo): parse assets/index.html
     return `<!DOCTYPE html>

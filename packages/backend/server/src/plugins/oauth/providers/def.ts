@@ -101,7 +101,7 @@ export abstract class OAuthProvider {
         headers: {
           ...init?.headers,
           Accept: 'application/json',
-          'User-Agent': 'AFFiNE-Server',
+          'User-Agent': 'Zeshan-Server',
         },
       },
       this.fetchOptions(url)

@@ -11,15 +11,15 @@ const GENERIC_DEFAULT_WIDTH_PERCENT = 100;
 const GENERIC_DEFAULT_HEIGHT_IN_NOTE = 400;
 
 /**
- * AFFiNE domains that should be excluded from generic embedding
- * These are based on the centralized cloud constants and known AFFiNE domains
+ * Zeshan domains that should be excluded from generic embedding
+ * These are based on the centralized cloud constants and known Zeshan domains
  */
 const AFFINE_DOMAINS = [
-  'app.affine.pro', // Stable cloud domain
-  'insider.affine.pro', // Beta/internal cloud domain
-  'affine.fail', // Canary cloud domain
+  'zeshan.local', // Stable cloud domain
+  'zeshan.local', // Beta/internal cloud domain
+  'zeshan.local', // Canary cloud domain
   'toeverything.app', // Safety measure for potential future use
-  'apple.getaffineapp.com', // Cloud domain for Apple app
+  'zeshan.local', // Cloud domain for Apple app
 ];
 
 const genericUrlValidationOptions: EmbedIframeUrlValidationOptions = {
@@ -29,7 +29,7 @@ const genericUrlValidationOptions: EmbedIframeUrlValidationOptions = {
 
 /**
  * Validates if a URL is suitable for generic iframe embedding
- * Allows HTTPS URLs but excludes AFFiNE domains
+ * Allows HTTPS URLs but excludes Zeshan domains
  * @param url The URL to validate
  * @returns Boolean indicating if the URL can be generically embedded
  */
@@ -46,7 +46,7 @@ function isValidGenericEmbedUrl(url: string): boolean {
       return false;
     }
 
-    // Exclude AFFiNE domains
+    // Exclude Zeshan domains
     const hostname = parsedUrl.hostname.toLowerCase();
     if (
       AFFINE_DOMAINS.some(

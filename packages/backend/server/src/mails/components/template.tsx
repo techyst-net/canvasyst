@@ -8,6 +8,18 @@ import { Link } from '@react-email/link';
 import { Row } from '@react-email/row';
 import { Section } from '@react-email/section';
 import { Text as EmailText } from '@react-email/text';
+
+/**
+ * Origin that transactional-email images are loaded from.
+ *
+ * Mail clients cannot resolve relative paths, so this has to be an absolute URL
+ * on a host you control. Defaults to the server's configured external URL.
+ */
+const BRAND_ORIGIN = (
+  process.env.AFFINE_SERVER_EXTERNAL_URL ??
+  process.env.SERVER_EXTERNAL_URL ??
+  'https://zeshan.local'
+).replace(/\/+$/, '');
 import type { PropsWithChildren } from 'react';
 
 import { BasicTextStyle } from './common';
@@ -125,7 +137,7 @@ export function Button(
 ) {
   const style = {
     ...BasicTextStyle,
-    backgroundColor: props.type === 'secondary' ? '#FFFFFF' : '#1E96EB',
+    backgroundColor: props.type === 'secondary' ? '#FFFFFF' : '#6366F1',
     color: props.type === 'secondary' ? '#141414' : '#FFFFFF',
     textDecoration: 'none',
     fontWeight: '600',
@@ -212,10 +224,10 @@ export function Template(props: PropsWithChildren) {
           }}
         >
           <Section>
-            <Link href="https://affine.pro">
+            <Link href={BRAND_ORIGIN}>
               <Img
-                src="https://cdn.affine.pro/mail/2023-8-9/affine-logo.png"
-                alt="AFFiNE logo"
+                src={`${BRAND_ORIGIN}/favicon.png`}
+                alt="Zeshan"
                 height="32px"
               />
             </Link>

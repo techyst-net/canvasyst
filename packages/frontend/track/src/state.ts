@@ -40,7 +40,10 @@ function createTrackerState(): TrackerState {
   const hasClientId = !!clientStorage?.getItem(CLIENT_ID_KEY);
 
   return {
-    enabled: true,
+    // Off by default. Upstream enabled tracking unconditionally, and the
+    // telemetry service identifies the signed-in account by email, name and
+    // avatar. Call tracker.opt_in_tracking() to enable it deliberately.
+    enabled: false,
     clientStorage,
     clientId: readPersistentId(CLIENT_ID_KEY, clientStorage),
     pendingFirstVisit: !hasClientId,

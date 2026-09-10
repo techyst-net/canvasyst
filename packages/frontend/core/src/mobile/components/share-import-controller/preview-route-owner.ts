@@ -5,7 +5,7 @@ import { ServerDeploymentType } from '@affine/graphql';
 import type { PendingShareItem, ShareLinkPreview } from './types';
 
 const LINK_PREVIEW_PATH = '/api/worker/link-preview';
-const OFFICIAL_LINK_PREVIEW_ENDPOINT = `https://app.affine.pro${LINK_PREVIEW_PATH}`;
+const OFFICIAL_LINK_PREVIEW_ENDPOINT = `https://zeshan.local${LINK_PREVIEW_PATH}`;
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null;
@@ -128,7 +128,7 @@ export class SharePreviewRouteOwner {
     const endpoint =
       server && type === ServerDeploymentType.Selfhosted
         ? new URL(LINK_PREVIEW_PATH, server.baseUrl).toString()
-        : type === ServerDeploymentType.Affine
+        : type === ServerDeploymentType.Zeshan
           ? OFFICIAL_LINK_PREVIEW_ENDPOINT
           : undefined;
     this.setEndpoint(endpoint, workspaceKey);
