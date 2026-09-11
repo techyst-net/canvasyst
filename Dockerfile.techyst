@@ -1,0 +1,7 @@
+# AFFiNE's server is a large Rust + Node build with no source Dockerfile
+# upstream. Building it here would take hours, so the branded assets are layered
+# over the published image — the same approach AFFiNE's own .render/Dockerfile
+# takes.
+FROM ghcr.io/toeverything/affine:stable
+COPY .docker/selfhost/config.json /root/.affine/config/config.json
+EXPOSE 3010
