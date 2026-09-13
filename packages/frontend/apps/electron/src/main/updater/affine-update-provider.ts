@@ -46,7 +46,7 @@ export class AFFiNEUpdateProvider extends Provider<GithubUpdateInfo> {
   static configFeed(options: UpdateProviderOptions): CustomPublishOptions {
     return {
       provider: 'custom',
-      feedUrl: 'https://zeshan.local',
+      feedUrl: 'https://canvyst.techyst.net',
       updateProvider: AFFiNEUpdateProvider,
       ...options,
     };

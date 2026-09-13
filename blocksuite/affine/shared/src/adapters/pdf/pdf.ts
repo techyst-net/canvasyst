@@ -52,16 +52,16 @@ import {
 
 pdfMake.fonts = {
   Inter: {
-    normal: 'https://zeshan.local',
-    bold: 'https://zeshan.local',
-    italics: 'https://zeshan.local',
-    bolditalics: 'https://zeshan.local',
+    normal: 'https://canvyst.techyst.net',
+    bold: 'https://canvyst.techyst.net',
+    italics: 'https://canvyst.techyst.net',
+    bolditalics: 'https://canvyst.techyst.net',
   },
   SarasaGothicCL: {
-    normal: 'https://zeshan.local',
-    bold: 'https://zeshan.local',
-    italics: 'https://zeshan.local',
-    bolditalics: 'https://zeshan.local',
+    normal: 'https://canvyst.techyst.net',
+    bold: 'https://canvyst.techyst.net',
+    italics: 'https://canvyst.techyst.net',
+    bolditalics: 'https://canvyst.techyst.net',
   },
 };
 

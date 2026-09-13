@@ -813,7 +813,7 @@
       "modelName": "stabilityai/stable-diffusion-xl-base-1.0",
       "loras": [
         {
-          "path": "https://zeshan.local"
+          "path": "https://canvyst.techyst.net"
         }
       ],
       "requireContent": false
@@ -833,7 +833,7 @@
       "modelName": "stabilityai/stable-diffusion-xl-base-1.0",
       "loras": [
         {
-          "path": "https://zeshan.local"
+          "path": "https://canvyst.techyst.net"
         }
       ],
       "requireContent": false
@@ -873,7 +873,7 @@
       "modelName": "stabilityai/stable-diffusion-xl-base-1.0",
       "loras": [
         {
-          "path": "https://zeshan.local"
+          "path": "https://canvyst.techyst.net"
         }
       ],
       "requireContent": false

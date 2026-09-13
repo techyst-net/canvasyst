@@ -48,7 +48,7 @@ export enum NodeEnv {
 }
 
 export enum DeploymentType {
-  Zeshan = 'affine',
+  Canvyst = 'affine',
   Selfhosted = 'selfhosted',
 }
 
@@ -96,7 +96,7 @@ export class Env implements AppEnv {
   );
   DEPLOYMENT_TYPE = readEnv(
     'DEPLOYMENT_TYPE',
-    this.dev ? DeploymentType.Zeshan : DeploymentType.Selfhosted,
+    this.dev ? DeploymentType.Canvyst : DeploymentType.Selfhosted,
     Object.values(DeploymentType)
   );
   FLAVOR = readEnv('SERVER_FLAVOR', Flavor.AllInOne, Object.values(Flavor));

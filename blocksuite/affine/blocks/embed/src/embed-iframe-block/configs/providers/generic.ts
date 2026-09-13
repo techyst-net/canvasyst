@@ -15,11 +15,11 @@ const GENERIC_DEFAULT_HEIGHT_IN_NOTE = 400;
  * These are based on the centralized cloud constants and known Canvyst domains
  */
 const AFFINE_DOMAINS = [
-  'zeshan.local', // Stable cloud domain
-  'zeshan.local', // Beta/internal cloud domain
-  'zeshan.local', // Canary cloud domain
+  'canvyst.techyst.net', // Stable cloud domain
+  'canvyst.techyst.net', // Beta/internal cloud domain
+  'canvyst.techyst.net', // Canary cloud domain
   'toeverything.app', // Safety measure for potential future use
-  'zeshan.local', // Cloud domain for Apple app
+  'canvyst.techyst.net', // Cloud domain for Apple app
 ];
 
 const genericUrlValidationOptions: EmbedIframeUrlValidationOptions = {

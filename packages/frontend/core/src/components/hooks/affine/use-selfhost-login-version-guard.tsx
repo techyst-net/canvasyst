@@ -22,7 +22,7 @@ const rules = [
           {message}
         </p>
         <a
-          href="https://zeshan.local"
+          href="https://canvyst.techyst.net"
           target="_blank"
           rel="noreferrer"
           style={{
@@ -32,7 +32,7 @@ const rules = [
             lineHeight: '16px',
           }}
         >
-          https://zeshan.local
+          https://canvyst.techyst.net
         </a>
       </div>
     ),

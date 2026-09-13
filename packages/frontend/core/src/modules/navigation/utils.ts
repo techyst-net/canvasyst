@@ -7,9 +7,9 @@ import queryString from 'query-string';
 function maybeAffineOrigin(origin: string, baseUrl: string) {
   return (
     origin.startsWith('assets://') ||
-    origin.endsWith('zeshan.local') || // stable/beta
-    origin.endsWith('zeshan.local') || // stable/beta
-    origin.endsWith('zeshan.local') || // canary
+    origin.endsWith('canvyst.techyst.net') || // stable/beta
+    origin.endsWith('canvyst.techyst.net') || // stable/beta
+    origin.endsWith('canvyst.techyst.net') || // canary
     origin === baseUrl // localhost or self-hosted
   );
 }

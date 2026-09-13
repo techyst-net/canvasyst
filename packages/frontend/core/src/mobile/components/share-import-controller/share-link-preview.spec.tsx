@@ -178,7 +178,7 @@ describe('link preview transport and route ownership', () => {
       'cloud route',
       'deferred' as const,
       workspace('cloud'),
-      [server('cloud', 'https://cloud.example/', ServerDeploymentType.Zeshan)],
+      [server('cloud', 'https://cloud.example/', ServerDeploymentType.Canvyst)],
       'https://app.affine.pro/api/worker/link-preview',
     ],
     [
@@ -272,7 +272,7 @@ describe('link preview transport and route ownership', () => {
     ]);
     const first = owner.load();
     owner.selectWorkspace(workspace('cloud'), [
-      server('cloud', 'https://cloud.example/', ServerDeploymentType.Zeshan),
+      server('cloud', 'https://cloud.example/', ServerDeploymentType.Canvyst),
     ]);
     const second = owner.load();
 
@@ -329,7 +329,7 @@ describe('link preview transport and route ownership', () => {
     expect(fetch).not.toHaveBeenCalled();
 
     owner.selectWorkspace(workspace('cloud'), [
-      server('cloud', 'https://cloud.example/', ServerDeploymentType.Zeshan),
+      server('cloud', 'https://cloud.example/', ServerDeploymentType.Canvyst),
     ]);
     expect(owner.routeEndpoint).toBe(
       'https://app.affine.pro/api/worker/link-preview'
@@ -359,7 +359,7 @@ describe('link preview transport and route ownership', () => {
     ],
     [
       'signed-in cloud configuration',
-      [server('cloud', 'https://cloud.example/', ServerDeploymentType.Zeshan)],
+      [server('cloud', 'https://cloud.example/', ServerDeploymentType.Canvyst)],
       true,
       'cloudOnly',
     ],

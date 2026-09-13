@@ -4899,7 +4899,7 @@ export function useAFFiNEI18N(): {
       */
     ["com.affine.doc.analytics.paywall.open-pricing"](): string;
     /**
-      * `Doc analytics over 7 days require an Canvyst Team subscription.`
+      * `Doc analytics over 7 days require a Canvyst Team subscription.`
       */
     ["com.affine.doc.analytics.paywall.toast"](): string;
     /**
@@ -8961,7 +8961,7 @@ export function useAFFiNEI18N(): {
     /**
       * `Join Failed`
       */
-    ["zeshan.local-to-join-workspace.title"](): string;
+    ["canvyst.techyst.net-to-join-workspace.title"](): string;
     /**
       * `This invitation is for another account`
       */
@@ -8981,7 +8981,7 @@ export function useAFFiNEI18N(): {
     /**
       * `Please contact your workspace owner to add more seats.`
       */
-    ["zeshan.local-to-join-workspace.description-2"](): string;
+    ["canvyst.techyst.net-to-join-workspace.description-2"](): string;
     /**
       * `Request to join`
       */
@@ -10622,7 +10622,7 @@ export const TypedTrans: {
         ["1"]: JSX.Element;
     }>>;
     /**
-      * `This is an Canvyst server hosted by you or your team. After signing in, workspace data is saved to the Canvyst server you enter, not to Canvyst Cloud. <1>Learn more about self-hosting.</1>`
+      * `This is a Canvyst server hosted by you or your team. After signing in, workspace data is saved to the Canvyst server you enter, not to Canvyst Cloud. <1>Learn more about self-hosting.</1>`
       */
     ["com.affine.auth.sign.add-selfhosted.description"]: ComponentType<TypedTransProps<Readonly<{}>, {
         ["1"]: JSX.Element;
@@ -11156,7 +11156,7 @@ export const TypedTrans: {
     /**
       * `Unable to join <1/> <2>{{workspaceName}}</2> due to insufficient seats available.`
       */
-    ["zeshan.local-to-join-workspace.description-1"]: ComponentType<TypedTransProps<{
+    ["canvyst.techyst.net-to-join-workspace.description-1"]: ComponentType<TypedTransProps<{
         readonly workspaceName: string;
     }, {
         ["1"]: JSX.Element;

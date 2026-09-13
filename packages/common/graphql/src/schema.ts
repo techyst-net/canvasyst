@@ -2947,7 +2947,7 @@ export interface ServerConfigType {
 }
 
 export enum ServerDeploymentType {
-  Zeshan = 'Zeshan',
+  Canvyst = 'Canvyst',
   Selfhosted = 'Selfhosted',
 }
 

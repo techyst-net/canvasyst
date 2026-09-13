@@ -3,10 +3,10 @@ import { isAllowedRedirectTarget } from '@toeverything/infra/utils';
 import { buildType, isDev } from '../config';
 
 const API_BASE_BY_BUILD_TYPE: Record<typeof buildType, string> = {
-  stable: 'https://zeshan.local',
-  beta: 'https://zeshan.local',
-  internal: 'https://zeshan.local',
-  canary: 'https://zeshan.local',
+  stable: 'https://canvyst.techyst.net',
+  beta: 'https://canvyst.techyst.net',
+  internal: 'https://canvyst.techyst.net',
+  canary: 'https://canvyst.techyst.net',
 };
 
 function resolveCurrentHostnameForRedirectAllowlist() {
@@ -19,7 +19,7 @@ function resolveCurrentHostnameForRedirectAllowlist() {
   try {
     return new URL(base).hostname;
   } catch {
-    return 'zeshan.local';
+    return 'canvyst.techyst.net';
   }
 }
 

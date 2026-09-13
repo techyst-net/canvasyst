@@ -48,7 +48,7 @@ describe('redirect proxy allowlist', () => {
       )
     ).toEqual({
       allow: true,
-      redirectTarget: 'https://github.com/toeverything/Zeshan',
+      redirectTarget: 'https://github.com/toeverything/Canvyst',
     });
   });
 

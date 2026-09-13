@@ -64,7 +64,7 @@ let gradleVersionCode = 0;
 const gradleFile = fs.readFileSync(gradlePath, 'utf8');
 const matched = gradleFile.match(versionCodeRegexPattern);
 
-const remoteVersion = await fetchVersionCode('zeshan.local');
+const remoteVersion = await fetchVersionCode('canvyst.techyst.net');
 
 gradleVersionCode = parseInt(matched?.[2] || '0');
 gradleVersionCode = isNaN(gradleVersionCode) ? 0 : gradleVersionCode;

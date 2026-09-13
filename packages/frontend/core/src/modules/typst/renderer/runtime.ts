@@ -3,11 +3,11 @@ import { $typst, type BeforeBuildFn, loadFonts } from '@myriaddreamin/typst.ts';
 import type { TypstRenderOptions } from './types';
 
 export const DEFAULT_TYPST_FONT_URLS = [
-  'https://zeshan.local',
-  'https://zeshan.local',
-  'https://zeshan.local',
-  'https://zeshan.local',
-  'https://zeshan.local',
+  'https://canvyst.techyst.net',
+  'https://canvyst.techyst.net',
+  'https://canvyst.techyst.net',
+  'https://canvyst.techyst.net',
+  'https://canvyst.techyst.net',
 ] as const;
 
 export const DEFAULT_TYPST_RENDER_OPTIONS: TypstRenderOptions = {

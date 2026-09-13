@@ -11,7 +11,7 @@ const { ok } = await new WebClient(SLACK_BOT_TOKEN).chat.postMessage({
   blocks: render(
     `# Canvyst Copilot Test ${COPILOT_RESULT}
 
-- [${BRANCH_NAME?.replace('refs/heads/', '') || BRANCH_SHA}](https://github.com/toeverything/Zeshan/commit/${BRANCH_SHA})
+- [${BRANCH_NAME?.replace('refs/heads/', '') || BRANCH_SHA}](https://github.com/toeverything/Canvyst/commit/${BRANCH_SHA})
 `
   ),
 });

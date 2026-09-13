@@ -51,7 +51,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                 OAuthProviderType.Google,
                 OAuthProviderType.Apple,
               ],
-              type: ServerDeploymentType.Zeshan,
+              type: ServerDeploymentType.Canvyst,
               credentialsRequirement: {
                 password: {
                   minLength: 8,
@@ -84,7 +84,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                   OAuthProviderType.Google,
                   OAuthProviderType.Apple,
                 ],
-                type: ServerDeploymentType.Zeshan,
+                type: ServerDeploymentType.Canvyst,
                 credentialsRequirement: {
                   password: {
                     minLength: 8,
@@ -117,7 +117,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                     OAuthProviderType.Google,
                     OAuthProviderType.Apple,
                   ],
-                  type: ServerDeploymentType.Zeshan,
+                  type: ServerDeploymentType.Canvyst,
                   credentialsRequirement: {
                     password: {
                       minLength: 8,
@@ -146,7 +146,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                       OAuthProviderType.Google,
                       OAuthProviderType.Apple,
                     ],
-                    type: ServerDeploymentType.Zeshan,
+                    type: ServerDeploymentType.Canvyst,
                     credentialsRequirement: {
                       password: {
                         minLength: 8,
@@ -177,7 +177,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                         OAuthProviderType.Google,
                         OAuthProviderType.Apple,
                       ],
-                      type: ServerDeploymentType.Zeshan,
+                      type: ServerDeploymentType.Canvyst,
                       credentialsRequirement: {
                         password: {
                           minLength: 8,

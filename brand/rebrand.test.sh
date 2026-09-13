@@ -30,11 +30,11 @@ cat > "$TMP/static/bundle.js" <<'FIXTURE'
 "blog":"https://affine.pro/blog?tag=Release+Note",
 "ai":"https://ai.affine.pro",
 "root":"https://affine.pro/",
-"repo":"https://github.com/toeverything/Zeshan",
+"repo":"https://github.com/toeverything/Canvyst",
 "i18nKey":"com.affine.aboutAFFiNE.title",
 "flavour":"affine:paragraph",
 "display":"About AFFiNE",
-"stale":"Zeshan Cloud",
+"stale":"Canvyst Cloud",
 "promo":"Love our app? <1>Star us on GitHub</1> and <2>create issues</2> for your valuable feedback!",
 "useCase":"Tell us your use case"
 }

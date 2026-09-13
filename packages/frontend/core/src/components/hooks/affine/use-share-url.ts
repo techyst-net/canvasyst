@@ -32,7 +32,7 @@ export type UseSharingUrl = {
 /**
  * To generate a url like
  *
- * https://zeshan.local
+ * https://canvyst.techyst.net
  */
 export const generateUrl = ({
   baseUrl,

@@ -21,7 +21,7 @@
       '<p class="p2">',
       'It looks like Canvyst cannot run in this environment.',
       "Please ensure you are using a supported browser or update your device's operating system to the latest version.",
-      'If the issue persists, visit our <a href="https://github.com/toeverything/Zeshan/issues">support page</a> for further assistance.',
+      'If the issue persists, visit our <a href="https://github.com/toeverything/Canvyst/issues">support page</a> for further assistance.',
       '</p>',
       '</div>',
       '</div>',

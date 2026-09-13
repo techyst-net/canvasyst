@@ -138,7 +138,7 @@ mod tests {
             "attachments": [
               {
                 "kind": "url",
-                "url": "https://zeshan.local"
+                "url": "https://canvyst.techyst.net"
               }
             ]
           },
@@ -175,7 +175,7 @@ mod tests {
               {
                 "type": "image",
                 "source": {
-                  "url": "https://zeshan.local",
+                  "url": "https://canvyst.techyst.net",
                   "media_type": "image/png"
                 }
               }
@@ -279,7 +279,7 @@ mod tests {
             "attachments": [
               {
                 "kind": "url",
-                "url": "https://zeshan.local",
+                "url": "https://canvyst.techyst.net",
                 "mimeType": "application/pdf"
               }
             ]
@@ -310,7 +310,7 @@ mod tests {
             "attachments": [
               {
                 "kind": "url",
-                "url": "https://zeshan.local",
+                "url": "https://canvyst.techyst.net",
                 "mimeType": "image/png"
               }
             ]
@@ -340,7 +340,7 @@ mod tests {
           "attachments": [
             {
               "kind": "url",
-              "url": "https://zeshan.local"
+              "url": "https://canvyst.techyst.net"
             },
             {
               "kind": "file_handle",

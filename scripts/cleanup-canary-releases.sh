@@ -25,7 +25,7 @@ Examples:
   scripts/cleanup-canary-releases.sh --keep 14
   scripts/cleanup-canary-releases.sh --dedupe-by-commit --keep 30
   scripts/cleanup-canary-releases.sh --keep 0 --limit 2000 --yes
-  scripts/cleanup-canary-releases.sh --repo toeverything/Zeshan --keep 30 --yes
+  scripts/cleanup-canary-releases.sh --repo toeverything/Canvyst --keep 30 --yes
 USAGE
 }
 

@@ -76,7 +76,7 @@ if [ -d "$STATIC" ]; then
   # --- Display name --------------------------------------------------------
   #
   # Capitalised "AFFiNE" is the brand token; the lowercase "affine" used in
-  # keys and paths is left untouched. "Zeshan" is the residue of an earlier
+  # keys and paths is left untouched. "Canvyst" is the residue of an earlier
   # rename that used a person's name instead of the product's.
   #
   # Two things contain "AFFiNE" and must survive the rename, so they are parked
@@ -86,15 +86,15 @@ if [ -d "$STATIC" ]; then
   #     Renaming it means every string under it resolves to nothing and the
   #     About page renders raw key names.
   #   * the upstream repository URL, which is a real address we link to
-  #     deliberately. An earlier rename had pointed it at `toeverything/Zeshan`,
+  #     deliberately. An earlier rename had pointed it at `toeverything/Canvyst`,
   #     which does not exist.
-  grep -rlE 'AFFiNE|Zeshan' "$STATIC" 2>/dev/null | while read -r f; do
+  grep -rlE 'AFFiNE|Canvyst' "$STATIC" 2>/dev/null | while read -r f; do
     sed -i \
       -e 's|com\.affine\.aboutAFFiNE|@@I18NKEY@@|g' \
       -e 's|toeverything/AFFiNE|@@UPSTREAM@@|g' \
-      -e 's|toeverything/Zeshan|@@UPSTREAM@@|g' \
+      -e 's|toeverything/Canvyst|@@UPSTREAM@@|g' \
       -e "s|AFFiNE|$BRAND|g" \
-      -e "s|Zeshan|$BRAND|g" \
+      -e "s|Canvyst|$BRAND|g" \
       -e 's|@@I18NKEY@@|com.affine.aboutAFFiNE|g' \
       -e 's|@@UPSTREAM@@|toeverything/AFFiNE|g' \
       "$f" || true

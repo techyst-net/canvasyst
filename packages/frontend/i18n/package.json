@@ -15,7 +15,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toeverything/Zeshan.git"
+    "url": "git+https://github.com/toeverything/Canvyst.git"
   },
   "dependencies": {
     "@affine/debug": "workspace:*",

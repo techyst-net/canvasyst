@@ -4,12 +4,12 @@
   <name>Canvyst</name>
   <summary>Productivity and note-taking app</summary>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>MIT AND LicenseRef-proprietary=https://github.com/toeverything/Zeshan/blob/canary/LICENSE</project_license>
-  <url type="homepage">https://zeshan.local</url>
-  <url type="bugtracker">https://github.com/toeverything/Zeshan/issues</url>
-  <url type="help">https://zeshan.local</url>
-  <url type="vcs-browser">https://github.com/toeverything/Zeshan</url>
-  <url type="contribute">https://zeshan.local</url>
+  <project_license>MIT AND LicenseRef-proprietary=https://github.com/toeverything/Canvyst/blob/canary/LICENSE</project_license>
+  <url type="homepage">https://canvyst.techyst.net</url>
+  <url type="bugtracker">https://github.com/toeverything/Canvyst/issues</url>
+  <url type="help">https://canvyst.techyst.net</url>
+  <url type="vcs-browser">https://github.com/toeverything/Canvyst</url>
+  <url type="contribute">https://canvyst.techyst.net</url>
   <developer id="pro.affine.app">
     <name>affine</name>
   </developer>
@@ -51,21 +51,21 @@
   <launchable type="desktop-id">affine.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://zeshan.local</image>
+      <image>https://canvyst.techyst.net</image>
       <caption>Document writing interface with block-based editing</caption>
     </screenshot>
     <screenshot>
-      <image>https://zeshan.local</image>
+      <image>https://canvyst.techyst.net</image>
       <caption>Whiteboard drawing and visualization capabilities</caption>
     </screenshot>
     <screenshot>
-      <image>https://zeshan.local</image>
+      <image>https://canvyst.techyst.net</image>
       <caption>Project planning and task management view</caption>
     </screenshot>
   </screenshots>
   <releases>
     <release version="0.27.0" date="2026-07-14">
-      <url>https://github.com/toeverything/Zeshan/releases/tag/v0.27.0</url>
+      <url>https://github.com/toeverything/Canvyst/releases/tag/v0.27.0</url>
     </release>
   </releases>
 </component>
