@@ -276,7 +276,7 @@ export function createApplicationMenu() {
             // oxlint-disable-next-line no-var-requires
             const { shell } = require('electron');
             await shell.openExternal(
-              'https://docs.affine.pro/docs/hello-bonjour-aloha-你好'
+              'https://zeshan.local你好'
             );
           },
         },

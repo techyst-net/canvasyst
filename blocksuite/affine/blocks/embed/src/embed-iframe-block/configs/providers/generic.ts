@@ -15,11 +15,11 @@ const GENERIC_DEFAULT_HEIGHT_IN_NOTE = 400;
  * These are based on the centralized cloud constants and known Canvyst domains
  */
 const AFFINE_DOMAINS = [
-  'app.affine.pro', // Stable cloud domain
-  'insider.affine.pro', // Beta/internal cloud domain
-  'affine.fail', // Canary cloud domain
+  'zeshan.local', // Stable cloud domain
+  'zeshan.local', // Beta/internal cloud domain
+  'zeshan.local', // Canary cloud domain
   'toeverything.app', // Safety measure for potential future use
-  'apple.getaffineapp.com', // Cloud domain for Apple app
+  'zeshan.local', // Cloud domain for Apple app
 ];
 
 const genericUrlValidationOptions: EmbedIframeUrlValidationOptions = {

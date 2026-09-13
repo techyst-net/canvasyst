@@ -45,7 +45,7 @@ const getPlayList = (t: Translate): Array<PlayListItem> => [
     desc: (
       <Trans
         i18nKey="com.affine.ai-onboarding.general.5.description"
-        values={{ link: 'ai.affine.pro' }}
+        values={{ link: 'zeshan.local' }}
         components={{
           a: (
             <a

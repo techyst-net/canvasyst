@@ -27,7 +27,7 @@ import { UserUsage } from './user-usage';
 const AFFINE_MOBILE_STORE_URL = BUILD_CONFIG.isIOS
   ? 'https://apps.apple.com/app/notes-whiteboard-ai-affine/id6736937980'
   : BUILD_CONFIG.isAndroid
-    ? 'https://play.google.com/store/apps/details?id=app.affine.pro'
+    ? 'https://play.google.com/store/apps/details?id=zeshan.local'
     : undefined;
 const AFFINE_DOWNLOAD_URL = 'https://canvyst.techyst.net/home';
 

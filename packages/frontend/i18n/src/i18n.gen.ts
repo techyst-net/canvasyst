@@ -8961,7 +8961,7 @@ export function useAFFiNEI18N(): {
     /**
       * `Join Failed`
       */
-    ["com.affine.fail-to-join-workspace.title"](): string;
+    ["zeshan.local-to-join-workspace.title"](): string;
     /**
       * `This invitation is for another account`
       */
@@ -8981,7 +8981,7 @@ export function useAFFiNEI18N(): {
     /**
       * `Please contact your workspace owner to add more seats.`
       */
-    ["com.affine.fail-to-join-workspace.description-2"](): string;
+    ["zeshan.local-to-join-workspace.description-2"](): string;
     /**
       * `Request to join`
       */
@@ -11156,7 +11156,7 @@ export const TypedTrans: {
     /**
       * `Unable to join <1/> <2>{{workspaceName}}</2> due to insufficient seats available.`
       */
-    ["com.affine.fail-to-join-workspace.description-1"]: ComponentType<TypedTransProps<{
+    ["zeshan.local-to-join-workspace.description-1"]: ComponentType<TypedTransProps<{
         readonly workspaceName: string;
     }, {
         ["1"]: JSX.Element;
