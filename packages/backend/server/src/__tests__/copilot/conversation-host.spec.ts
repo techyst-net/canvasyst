@@ -48,7 +48,7 @@ function fixture(
       docId: 'doc-1',
       focus: { selectors: [] },
       prompt: {
-        name: 'Chat With Zeshan AI',
+        name: 'Chat With Canvyst AI',
         config: {},
         paramKeys: [],
         params: {},

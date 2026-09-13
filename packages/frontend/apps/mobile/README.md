@@ -1,3 +1,3 @@
 # mobile
 
-Zeshan Mobile Edition Web app.
+Canvyst Mobile Edition Web app.

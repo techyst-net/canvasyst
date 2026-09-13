@@ -7,18 +7,18 @@ export type SetPasswordProps = {
 export default function SetPassword(props: SetPasswordProps) {
   return (
     <Template>
-      <Title>Set your Zeshan password</Title>
+      <Title>Set your Canvyst password</Title>
       <Content>
         <P>
           Click the button below to set your password. The magic link will
           expire in <Bold>30 minutes</Bold>.
         </P>
-        <Button href={props.url}>Sign in to Zeshan</Button>
+        <Button href={props.url}>Sign in to Canvyst</Button>
       </Content>
     </Template>
   );
 }
 
 SetPassword.PreviewProps = {
-  url: 'https://zeshan.local',
+  url: 'https://canvyst.techyst.net',
 };

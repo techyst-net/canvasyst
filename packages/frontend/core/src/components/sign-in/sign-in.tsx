@@ -207,7 +207,7 @@ export const SignInStep = ({
               {/*prettier-ignore*/}
               <Trans i18nKey="com.affine.auth.sign.message">
                 By clicking &quot;Continue with Google/Email&quot; above, you acknowledge that
-                you agree to Zeshan&apos;s <a href="https://zeshan.local" target="_blank" rel="noreferrer">Terms of Conditions</a> and <a href="https://zeshan.local" target="_blank" rel="noreferrer">Privacy Policy</a>.
+                you agree to Canvyst&apos;s <a href="https://canvyst.techyst.net/home/terms/" target="_blank" rel="noreferrer">Terms of Conditions</a> and <a href="https://canvyst.techyst.net/home/privacy/" target="_blank" rel="noreferrer">Privacy Policy</a>.
             </Trans>
             </div>
             <div className={style.skipDivider}>

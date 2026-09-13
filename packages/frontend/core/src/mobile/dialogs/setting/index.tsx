@@ -27,9 +27,9 @@ import { UserUsage } from './user-usage';
 const AFFINE_MOBILE_STORE_URL = BUILD_CONFIG.isIOS
   ? 'https://apps.apple.com/app/notes-whiteboard-ai-affine/id6736937980'
   : BUILD_CONFIG.isAndroid
-    ? 'https://play.google.com/store/apps/details?id=zeshan.local'
+    ? 'https://play.google.com/store/apps/details?id=app.affine.pro'
     : undefined;
-const AFFINE_DOWNLOAD_URL = 'https://zeshan.local';
+const AFFINE_DOWNLOAD_URL = 'https://canvyst.techyst.net/home';
 
 const SupportGroup = () => {
   const t = useI18n();
@@ -37,7 +37,7 @@ const SupportGroup = () => {
 
   const shareApp = useCallback(async () => {
     const shareData = {
-      title: 'Zeshan',
+      title: 'Canvyst',
       text: t['com.affine.mobile.setting.support.invite-message'](),
       url: AFFINE_DOWNLOAD_URL,
     };

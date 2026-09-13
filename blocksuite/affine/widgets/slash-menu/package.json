@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-slash-menu",
-  "description": "Zeshan slash menu widget.",
+  "description": "Canvyst slash menu widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Zeshan Routes Schema",
+  "description": "Canvyst Routes Schema",
   "definitions": {
     "route": {
       "type": "string",

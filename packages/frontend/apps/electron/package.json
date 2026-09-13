@@ -5,11 +5,11 @@
   "main": "./dist/main.js",
   "author": "toeverything",
   "repository": {
-    "url": "https://github.com/toeverything/Zeshan",
+    "url": "https://github.com/toeverything/AFFiNE",
     "type": "git"
   },
-  "description": "Zeshan Desktop App",
-  "homepage": "https://github.com/toeverything/Zeshan",
+  "description": "Canvyst Desktop App",
+  "homepage": "https://github.com/toeverything/AFFiNE",
   "exports": {
     "./helper/exposed": "./src/helper/exposed.ts",
     "./main/exposed": "./src/main/exposed.ts",

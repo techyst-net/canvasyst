@@ -1,5 +1,5 @@
-# Zeshan Command Abstractions
+# Canvyst Command Abstractions
 
-This package contains the command abstractions for the Zeshan framework to be used for CMD-K.
+This package contains the command abstractions for the Canvyst framework to be used for CMD-K.
 
 The implementation is highly inspired by the [VSCode Command Abstractions](https://github.com/microsoft/vscode)

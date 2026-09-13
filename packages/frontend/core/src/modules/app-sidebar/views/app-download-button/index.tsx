@@ -22,7 +22,7 @@ export function AppDownloadButton({
   // TODO(@JimmFly): unify this type of literal value.
   const handleClick = useCallback(() => {
     track.$.navigationPanel.bottomButtons.downloadApp();
-    const url = `https://zeshan.local`;
+    const url = `https://canvyst.techyst.net/home`;
     open(url, '_blank');
   }, []);
 

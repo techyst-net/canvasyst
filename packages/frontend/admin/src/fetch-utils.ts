@@ -1,9 +1,9 @@
 /**
- * Custom fetch utility with Zeshan version header
+ * Custom fetch utility with Canvyst version header
  * Automatically adds the x-affine-version header to all fetch requests
  */
 
-// BUILD_CONFIG is defined globally in the Zeshan project
+// BUILD_CONFIG is defined globally in the Canvyst project
 
 /**
  * Wrapper around fetch that automatically adds the x-affine-version header

@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-edgeless-dragging-area",
-  "description": "Zeshan edgeless dragging area widget.",
+  "description": "Canvyst edgeless dragging area widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

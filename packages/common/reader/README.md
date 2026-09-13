@@ -1,4 +1,4 @@
-# Zeshan Blocksuite format YDoc reader
+# Canvyst Blocksuite format YDoc reader
 
 ## Usage
 

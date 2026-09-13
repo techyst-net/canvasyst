@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-edgeless-auto-connect",
-  "description": "Zeshan edgeless auto connect widget.",
+  "description": "Canvyst edgeless auto connect widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

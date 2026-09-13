@@ -15,8 +15,8 @@ interface AppConfig {
 }
 
 const config: CapacitorConfig & AppConfig = {
-  appId: 'zeshan.local',
-  appName: 'Zeshan',
+  appId: 'app.affine.pro',
+  appName: 'Canvyst',
   webDir: 'dist',
   affineVersion: packageJson.version,
   android: {

@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-scroll-anchoring",
-  "description": "Zeshan scroll anchoring widget.",
+  "description": "Canvyst scroll anchoring widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

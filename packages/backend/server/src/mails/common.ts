@@ -7,10 +7,10 @@ export const TEST_USER: UserProps = {
 
 export const TEST_WORKSPACE: WorkspaceProps = {
   name: 'Test Workspace',
-  avatar: 'https://zeshan.local',
+  avatar: 'https://canvyst.techyst.net',
 };
 
 export const TEST_DOC: DocProps = {
   title: 'Test Doc',
-  url: 'https://zeshan.local',
+  url: 'https://canvyst.techyst.net',
 };

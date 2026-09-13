@@ -53,7 +53,7 @@ describe('oauth flow mode', () => {
   test('wraps external redirects with redirect-proxy', () => {
     expect(
       resolveOAuthRedirect(
-        'https://github.com/toeverything/Zeshan',
+        'https://github.com/toeverything/AFFiNE',
         'https://app.affine.pro'
       )
     ).toBe(

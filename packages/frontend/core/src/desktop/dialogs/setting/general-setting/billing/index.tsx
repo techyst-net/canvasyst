@@ -16,7 +16,6 @@ import { BillingHistory } from './billing-history';
 import { PaymentMethod } from './payment-method';
 import { ProPlanCard } from './pro-plan-card';
 import * as styles from './style.css';
-import { TypeformLink } from './typeform-link';
 
 export const BillingSettings = ({
   onChangeSettingState,
@@ -90,7 +89,6 @@ const SubscriptionSettings = ({
         <SubscriptionSettingSkeleton />
       )}
 
-      <TypeformLink />
 
       {proSubscription !== null ? (
         proSubscription && <PaymentMethod />

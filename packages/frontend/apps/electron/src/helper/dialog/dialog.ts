@@ -217,7 +217,7 @@ export async function loadDBFile(): Promise<LoadDBFileResult> {
           extensions: ['db', 'affine'],
         },
       ],
-      message: 'Load Workspace from a Zeshan file',
+      message: 'Load Workspace from a Canvyst file',
     });
     const selectedPath = ret.filePaths?.[0];
     if (ret.canceled || !selectedPath) {

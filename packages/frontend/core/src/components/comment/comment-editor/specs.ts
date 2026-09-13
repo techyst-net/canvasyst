@@ -145,7 +145,7 @@ export function getCommentEditorViewManager(framework: FrameworkProvider) {
       ViewportOverlayViewExtension,
       LinkedDocViewExtension,
 
-      // Zeshan side
+      // Canvyst side
       AffineThemeViewExtension,
       AffineEditorViewExtension,
 

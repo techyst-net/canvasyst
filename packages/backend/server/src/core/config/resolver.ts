@@ -75,12 +75,12 @@ export class ServerConfigResolver {
       name:
         this.config.server.name ??
         (env.selfhosted
-          ? 'Zeshan Self-hosted'
+          ? 'Canvyst Self-hosted'
           : env.namespaces.canary
-            ? 'Zeshan Canary Cloud'
+            ? 'Canvyst Canary Cloud'
             : env.namespaces.beta
-              ? 'Zeshan Beta Cloud'
-              : 'Zeshan Cloud'),
+              ? 'Canvyst Beta Cloud'
+              : 'Canvyst Cloud'),
       version: env.version,
       baseUrl: this.url.requestBaseUrl,
       type: env.DEPLOYMENT_TYPE,
@@ -117,7 +117,10 @@ export class ServerConfigResolver {
     }
 
     const channel = RELEASE_CHANNEL_MAP.get(env.NAMESPACE) ?? 'stable';
-    const url = `https://zeshan.local${channel}`;
+    // Upstream's release feed. This is a version check against the
+    // project we build on, not usage telemetry — no instance or user
+    // data is sent. Product analytics remain disabled.
+    const url = `https://affine.pro/api/worker/releases?channel=${channel}`;
 
     try {
       const response = await fetch(url, {

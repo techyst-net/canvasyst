@@ -62,14 +62,14 @@ function make<T extends ComponentType<any>>(
 
 export const Renderers = {
   //#region Test
-  TestMail: make(TestMail, 'Test Email from Zeshan'),
+  TestMail: make(TestMail, 'Test Email from Canvyst'),
   //#endregion
 
   //#region User
-  SignIn: make(SignIn, 'Sign in to Zeshan'),
-  SignUp: make(SignUp, 'Your Zeshan account is waiting for you!'),
-  SetPassword: make(SetPassword, 'Set your Zeshan password'),
-  ChangePassword: make(ChangePassword, 'Modify your Zeshan password'),
+  SignIn: make(SignIn, 'Sign in to Canvyst'),
+  SignUp: make(SignUp, 'Your Canvyst account is waiting for you!'),
+  SetPassword: make(SetPassword, 'Set your Canvyst password'),
+  ChangePassword: make(ChangePassword, 'Modify your Canvyst password'),
   VerifyEmail: make(VerifyEmail, 'Verify your email address'),
   ChangeEmail: make(ChangeEmail, 'Change your email address'),
   VerifyChangeEmail: make(VerifyChangeEmail, 'Verify your new email address'),
@@ -79,7 +79,7 @@ export const Renderers = {
   //#region Workspace
   MemberInvitation: make(
     Invitation,
-    'You were invited to join a workspace on Zeshan'
+    'You were invited to join a workspace on Canvyst'
   ),
   MemberAccepted: make(
     InvitationAccepted,
@@ -110,8 +110,8 @@ export const Renderers = {
   //#endregion
 
   //#region Doc
-  Mention: make(Mention, 'You were mentioned in Zeshan'),
-  Comment: make(Comment, 'New comment in Zeshan'),
+  Mention: make(Mention, 'You were mentioned in Canvyst'),
+  Comment: make(Comment, 'New comment in Canvyst'),
   CommentMention: make(CommentMention, 'You were mentioned in a comment'),
   //#endregion
 
@@ -148,7 +148,7 @@ export const Renderers = {
   //#region License
   TeamLicense: make(
     TeamLicense,
-    'Your Zeshan Self-Hosted Team Workspace license is ready'
+    'Your Canvyst Self-Hosted Team Workspace license is ready'
   ),
   //#endregion
 } as const;

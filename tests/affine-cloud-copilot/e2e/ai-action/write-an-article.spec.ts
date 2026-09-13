@@ -14,10 +14,10 @@ test.describe('AIAction/WriteAnArticleAboutThis', () => {
   }) => {
     const { writeArticle } = await utils.editor.askAIWithText(
       page,
-      'Zeshan is a workspace with fully merged docs'
+      'Canvyst is a workspace with fully merged docs'
     );
     const { answer, responses } = await writeArticle();
-    await expect(answer).toHaveText(/Zeshan/);
+    await expect(answer).toHaveText(/Canvyst/);
     expect(responses).toEqual(new Set(['insert-below', 'replace-selection']));
   });
 
@@ -30,12 +30,12 @@ test.describe('AIAction/WriteAnArticleAboutThis', () => {
       async () => {
         await utils.editor.createEdgelessText(
           page,
-          'Zeshan is a workspace with fully merged docs'
+          'Canvyst is a workspace with fully merged docs'
         );
       }
     );
     const { answer, responses } = await writeArticle();
-    await expect(answer).toHaveText(/Zeshan/);
+    await expect(answer).toHaveText(/Canvyst/);
     expect(responses).toEqual(new Set(['insert-below']));
   });
 
@@ -48,12 +48,12 @@ test.describe('AIAction/WriteAnArticleAboutThis', () => {
       async () => {
         await utils.editor.createEdgelessNote(
           page,
-          'Zeshan is a workspace with fully merged docs'
+          'Canvyst is a workspace with fully merged docs'
         );
       }
     );
     const { answer, responses } = await writeArticle();
-    await expect(answer).toHaveText(/Zeshan/);
+    await expect(answer).toHaveText(/Canvyst/);
     expect(responses).toEqual(new Set(['insert-below']));
   });
 
@@ -63,10 +63,10 @@ test.describe('AIAction/WriteAnArticleAboutThis', () => {
   }) => {
     const { writeArticle } = await utils.editor.askAIWithText(
       page,
-      'Zeshan is a workspace with fully merged docs'
+      'Canvyst is a workspace with fully merged docs'
     );
     const { answer } = await writeArticle();
-    await expect(answer).toHaveText(/Zeshan/);
+    await expect(answer).toHaveText(/Canvyst/);
     const replace = answer.getByTestId('answer-replace');
     await replace.click();
     await utils.chatPanel.waitForHistory(page, [
@@ -79,7 +79,7 @@ test.describe('AIAction/WriteAnArticleAboutThis', () => {
       prompt,
       actionName,
     } = await utils.chatPanel.getLatestAIActionMessage(page);
-    await expect(panelAnswer).toHaveText(/Zeshan/);
+    await expect(panelAnswer).toHaveText(/Canvyst/);
     await expect(prompt).toHaveText(/Write an article about this/);
     await expect(actionName).toHaveText(/Write an article about this/);
   });

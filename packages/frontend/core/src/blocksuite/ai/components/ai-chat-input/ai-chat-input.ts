@@ -486,7 +486,7 @@ export class AIChatInput extends SignalWatcher(
 
   protected override updated(changedProperties: PropertyValues<this>) {
     if (changedProperties.has('workspaceId')) {
-      this.aiModelService.setScope(this.workspaceId, 'Chat With Zeshan AI');
+      this.aiModelService.setScope(this.workspaceId, 'Chat With Canvyst AI');
     }
   }
 

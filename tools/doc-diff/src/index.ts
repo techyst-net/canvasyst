@@ -11,7 +11,7 @@ import {
 type Mode = 'rootdoc' | 'folder' | 'favorite';
 
 const HELP_TEXT = `
-Diff Zeshan Yjs snapshot docs between multiple binaries.
+Diff Canvyst Yjs snapshot docs between multiple binaries.
 
 Usage:
   # Root doc: diff meta.pages

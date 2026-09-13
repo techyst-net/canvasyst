@@ -35,5 +35,5 @@ export default function LinkInvitationApproved(
 
 LinkInvitationApproved.PreviewProps = {
   workspace: TEST_WORKSPACE,
-  url: 'https://zeshan.local',
+  url: 'https://canvyst.techyst.net',
 };

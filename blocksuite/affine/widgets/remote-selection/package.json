@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-remote-selection",
-  "description": "Zeshan remote selection widget.",
+  "description": "Canvyst remote selection widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

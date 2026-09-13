@@ -214,7 +214,7 @@ describe('AIChatMessages scrolling', () => {
             {
               id: 'block-1',
               flavour: 'affine:paragraph',
-              text: { content: 'Welcome to Zeshan', truncated: false },
+              text: { content: 'Welcome to Canvyst', truncated: false },
             },
           ],
           truncated: false,
@@ -274,7 +274,7 @@ describe('AIChatMessages scrolling', () => {
     expect(resultCard?.results).toEqual([
       expect.objectContaining({
         title: 'Getting Started',
-        content: 'Welcome to Zeshan',
+        content: 'Welcome to Canvyst',
       }),
     ]);
     expect(

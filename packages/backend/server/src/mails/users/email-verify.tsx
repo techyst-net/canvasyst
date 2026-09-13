@@ -11,7 +11,7 @@ export default function VerifyEmail(props: VerifyEmailProps) {
       <Content>
         <P>
           You recently requested to verify the email address associated with
-          your Zeshan account.
+          your Canvyst account.
           <br />
           To complete this process, please click on the verification link below.
         </P>
@@ -25,5 +25,5 @@ export default function VerifyEmail(props: VerifyEmailProps) {
 }
 
 VerifyEmail.PreviewProps = {
-  url: 'https://zeshan.local',
+  url: 'https://canvyst.techyst.net',
 };

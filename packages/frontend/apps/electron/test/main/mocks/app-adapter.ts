@@ -6,7 +6,7 @@ import type { AppAdapter } from 'electron-updater/out/AppAdapter';
  */
 export class MockedAppAdapter implements AppAdapter {
   version: string;
-  name = 'Zeshan-testing';
+  name = 'Canvyst-testing';
   isPackaged = true;
   appUpdateConfigPath = '';
   userDataPath = '';

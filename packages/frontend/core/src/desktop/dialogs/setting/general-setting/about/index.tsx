@@ -13,7 +13,7 @@ import { useServices } from '@toeverything/infra';
 import { useCallback } from 'react';
 
 import { useAppSettingHelper } from '../../../../../components/hooks/affine/use-app-setting-helper';
-import { relatedLinks } from './config';
+import { canvasystLinks, relatedLinks } from './config';
 import * as styles from './style.css';
 import { UpdateCheckSection } from './update-check-section';
 
@@ -119,7 +119,7 @@ export const AboutAffine = () => {
         <a
           className={styles.link}
           rel="noreferrer"
-          href="https://zeshan.local"
+          href={canvasystLinks.home}
           target="_blank"
         >
           {t['com.affine.aboutAFFiNE.contact.website']()}
@@ -128,7 +128,7 @@ export const AboutAffine = () => {
         <a
           className={styles.link}
           rel="noreferrer"
-          href="https://zeshan.local"
+          href={canvasystLinks.community}
           target="_blank"
         >
           {t['com.affine.aboutAFFiNE.contact.community']()}
@@ -157,7 +157,7 @@ export const AboutAffine = () => {
         <a
           className={styles.link}
           rel="noreferrer"
-          href="https://zeshan.local"
+          href={canvasystLinks.privacy}
           target="_blank"
         >
           {t['com.affine.aboutAFFiNE.legal.privacy']()}
@@ -166,7 +166,7 @@ export const AboutAffine = () => {
         <a
           className={styles.link}
           rel="noreferrer"
-          href="https://zeshan.local"
+          href={canvasystLinks.terms}
           target="_blank"
         >
           {t['com.affine.aboutAFFiNE.legal.tos']()}

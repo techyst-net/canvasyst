@@ -33,7 +33,7 @@ function session(
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
     parentSessionId: null,
-    promptName: 'Chat With Zeshan AI',
+    promptName: 'Chat With Canvyst AI',
     action: null,
     ...overrides,
   } as CopilotChatHistoryFragment;

@@ -44,7 +44,7 @@ function convertDescriptorToSchemaProperty(descriptor: ConfigDescriptor<any>) {
 function generateJsonSchema(outputPath: string) {
   const schema = {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    title: 'Zeshan Application Configuration',
+    title: 'Canvyst Application Configuration',
     type: 'object',
     properties: {},
   };

@@ -79,7 +79,7 @@ export function normalizeOpenAppSignInNextParam(
   return normalized;
 }
 
-// return an Zeshan app's url to be opened in desktop app
+// return an Canvyst app's url to be opened in desktop app
 export const getOpenUrlInDesktopAppLink = (
   url: string,
   newTab = true,

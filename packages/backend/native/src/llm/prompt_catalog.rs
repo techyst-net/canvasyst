@@ -564,7 +564,7 @@ mod tests {
       Some(11)
     );
 
-    let chat = built_in_prompt("Chat With Zeshan AI").expect("chat prompt");
+    let chat = built_in_prompt("Chat With Canvyst AI").expect("chat prompt");
     let chat_tools = chat
       .config
       .as_ref()

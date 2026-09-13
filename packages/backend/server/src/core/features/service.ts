@@ -2,7 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 
 import { Models } from '../../models';
 
-const STAFF = ['@toeverything.info', '@zeshan.local'];
+const STAFF = ['@techyst.net'];
 
 @Injectable()
 export class FeatureService {

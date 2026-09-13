@@ -17,9 +17,9 @@ export type SignInProps = {
 export default function SignIn(props: SignInProps) {
   return (
     <Template>
-      <Title>{`Sign in to ${props.serverName ?? 'Zeshan'}`}</Title>
+      <Title>{`Sign in to ${props.serverName ?? 'Canvyst'}`}</Title>
       <Content>
-        <P>You are signing in to Zeshan. Here is your code:</P>
+        <P>You are signing in to Canvyst. Here is your code:</P>
         <OnelineCodeBlock>{props.otp}</OnelineCodeBlock>
         <P>
           Alternatively, you can sign in directly by clicking the magic link
@@ -37,6 +37,6 @@ export default function SignIn(props: SignInProps) {
 }
 
 SignIn.PreviewProps = {
-  url: 'https://zeshan.local@test.com',
+  url: 'https://example.com',
   otp: '123456',
 };

@@ -30,7 +30,7 @@ export class Workspace {
 
   readonly packageJson: CommonPackageJsonContent;
 
-  private readonly logger = new Logger('Zeshan');
+  private readonly logger = new Logger('Canvyst');
 
   readonly path = ProjectRoot;
 

@@ -24,12 +24,12 @@ declare global {
 
 defineModuleConfig('server', {
   name: {
-    desc: 'A recognizable name for the server. Will be shown when connected with Zeshan Desktop.',
+    desc: 'A recognizable name for the server. Will be shown when connected with Canvyst Desktop.',
     default: undefined,
     shape: z.string().optional(),
   },
   externalUrl: {
-    desc: `Base url of Zeshan server, used for generating external urls.
+    desc: `Base url of Canvyst server, used for generating external urls.
 Default to be \`[server.protocol]://[server.host][:server.port]\` if not specified.
     `,
     default: '',

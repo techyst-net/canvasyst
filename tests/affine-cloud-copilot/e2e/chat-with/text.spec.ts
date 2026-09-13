@@ -62,16 +62,16 @@ test.describe('AIChatWith/Text', () => {
   test('should support insert above', async ({ loggedInPage: page, utils }) => {
     const { generateHeadings } = await utils.editor.askAIWithText(
       page,
-      'Zeshan'
+      'Canvyst'
     );
     const { answer } = await generateHeadings();
     await answer.locator('h1').isVisible();
-    await expect(answer).toHaveText(/Zeshan/, { timeout: 10000 });
+    await expect(answer).toHaveText(/Canvyst/, { timeout: 10000 });
 
     const insertAbove = answer.getByTestId('answer-insert-above');
     await insertAbove.click();
     const content = await utils.editor.getEditorContent(page);
-    expect(content).toBe('Zeshan\nAFFiNE');
+    expect(content).toBe('Canvyst\nAFFiNE');
   });
 
   test('should support replace selection', async ({

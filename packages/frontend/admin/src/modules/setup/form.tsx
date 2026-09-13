@@ -28,10 +28,10 @@ const Welcome = () => {
       style={{ minHeight: '300px' }}
     >
       <h1 className="text-5xl font-extrabold max-lg:text-3xl max-lg:font-bold">
-        Welcome to Zeshan
+        Welcome to Canvyst
       </h1>
       <p className="mt-5 font-semibold text-xl max-lg:px-4 max-lg:text-lg">
-        Configure your Self Host Zeshan with a few simple settings.
+        Configure your Self Host Canvyst with a few simple settings.
       </p>
     </div>
   );
@@ -47,7 +47,7 @@ const SettingsDone = () => {
         All Settings Done
       </h1>
       <p className="mt-5 font-semibold text-xl max-lg:px-4 max-lg:text-lg">
-        Zeshan is ready to use.
+        Canvyst is ready to use.
       </p>
     </div>
   );
@@ -209,7 +209,7 @@ export const Form = () => {
           </Button>
         )}
         <Button onClick={onNext} disabled={disableContinue}>
-          {current === count ? 'Open Zeshan' : 'Continue'}
+          {current === count ? 'Open Canvyst' : 'Continue'}
         </Button>
       </div>
 

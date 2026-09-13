@@ -1,7 +1,7 @@
 {
   "$schema": "https://github.com/toeverything/affine/releases/latest/download/config.schema.json",
   "server": {
-    "name": "Zeshan Self Hosted Server"
+    "name": "Canvyst Self Hosted Server"
   },
   "indexer": {
     "enabled": true,

@@ -14,7 +14,6 @@ import { TeamResumeAction } from '../../general-setting/plans/actions';
 import { BillingHistory } from './billing-history';
 import { PaymentMethodUpdater } from './payment-method';
 import { TeamCard } from './team-card';
-import { TypeformLink } from './typeform-link';
 
 export const WorkspaceSettingBilling = () => {
   const workspace = useService(WorkspaceService).workspace;
@@ -50,7 +49,6 @@ export const WorkspaceSettingBilling = () => {
         title={t['com.affine.payment.billing-setting.information']()}
       >
         <TeamCard />
-        <TypeformLink />
         <PaymentMethodUpdater />
         {subscription?.end && subscription.canceledAt ? (
           <ResumeSubscription expirationDate={subscription.end} />

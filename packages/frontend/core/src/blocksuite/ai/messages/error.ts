@@ -208,7 +208,7 @@ export class AIErrorWrapper extends SignalWatcher(WithDisposable(LitElement)) {
 
 const PaymentRequiredErrorRenderer = (host?: EditorHost | null) => html`
   <ai-error-wrapper
-    .text=${"You've reached the current usage cap for Zeshan AI. You can subscribe to Zeshan AI(with free 7-day-trial) to continue the AI experience!"}
+    .text=${"You've reached the current usage cap for Canvyst AI. You can subscribe to Canvyst AI(with free 7-day-trial) to continue the AI experience!"}
     .actionText=${'Upgrade'}
     .onClick=${() => AIAppEvents.requestUpgradePlan.next({ host })}
   ></ai-error-wrapper>
@@ -216,7 +216,7 @@ const PaymentRequiredErrorRenderer = (host?: EditorHost | null) => html`
 
 const LoginRequiredErrorRenderer = (host?: EditorHost | null) => html`
   <ai-error-wrapper
-    .text=${'You need to login to Zeshan Cloud to continue using Zeshan AI.'}
+    .text=${'You need to login to Canvyst Cloud to continue using Canvyst AI.'}
     .actionText=${'Login'}
     .onClick=${() => AIAppEvents.requestLogin.next({ host })}
   ></ai-error-wrapper>

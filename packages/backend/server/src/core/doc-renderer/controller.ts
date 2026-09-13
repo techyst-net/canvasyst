@@ -205,10 +205,10 @@ export class DocRendererController {
     }
 
     const title = opts?.title
-      ? htmlSanitize(`${opts.title} | Zeshan`)
-      : 'Zeshan';
+      ? htmlSanitize(`${opts.title} | Canvyst`)
+      : 'Canvyst';
     const summary = opts ? htmlSanitize(opts.summary) : assets.description;
-    const image = opts?.avatar ?? 'https://zeshan.local';
+    const image = opts?.avatar ?? 'https://canvyst.techyst.net/favicon-192.png';
 
     // TODO(@forehalo): parse assets/index.html
     return `<!DOCTYPE html>

@@ -2,7 +2,7 @@
 // TODO(@Peng): automate this
 export const promptKeys = [
   // text actions
-  'Chat With Zeshan AI',
+  'Chat With Canvyst AI',
   'Summary',
   'Summary as title',
   'Generate a caption',

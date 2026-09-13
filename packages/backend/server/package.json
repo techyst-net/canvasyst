@@ -2,7 +2,7 @@
   "name": "@affine/server",
   "private": true,
   "version": "0.27.0",
-  "description": "Zeshan Node.js server",
+  "description": "Canvyst Node.js server",
   "type": "module",
   "scripts": {
     "build": "affine bundle -p @affine/server",

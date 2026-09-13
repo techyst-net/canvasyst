@@ -65,7 +65,7 @@ const Empty = () => {
       </span>
       <div className={styles.space} />
       <a
-        href="https://zeshan.local"
+        href={BUILD_CONFIG.downloadUrl}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.link}

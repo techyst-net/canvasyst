@@ -14,10 +14,10 @@ test.describe('AIAction/Summarize', () => {
   }) => {
     const { summarize } = await utils.editor.askAIWithText(
       page,
-      'Zeshan is a workspace with fully merged docs'
+      'Canvyst is a workspace with fully merged docs'
     );
     const { answer, responses } = await summarize();
-    await expect(answer).toHaveText(/Zeshan/, { timeout: 10000 });
+    await expect(answer).toHaveText(/Canvyst/, { timeout: 10000 });
     expect(responses).toEqual(new Set(['insert-below', 'replace-selection']));
   });
 
@@ -30,12 +30,12 @@ test.describe('AIAction/Summarize', () => {
       async () => {
         await utils.editor.createEdgelessText(
           page,
-          'Zeshan is a workspace with fully merged docs'
+          'Canvyst is a workspace with fully merged docs'
         );
       }
     );
     const { answer, responses } = await summarize();
-    await expect(answer).toHaveText(/Zeshan/, { timeout: 10000 });
+    await expect(answer).toHaveText(/Canvyst/, { timeout: 10000 });
     expect(responses).toEqual(new Set(['insert-below']));
   });
 
@@ -48,12 +48,12 @@ test.describe('AIAction/Summarize', () => {
       async () => {
         await utils.editor.createEdgelessNote(
           page,
-          'Zeshan is a workspace with fully merged docs'
+          'Canvyst is a workspace with fully merged docs'
         );
       }
     );
     const { answer, responses } = await summarize();
-    await expect(answer).toHaveText(/Zeshan/, { timeout: 10000 });
+    await expect(answer).toHaveText(/Canvyst/, { timeout: 10000 });
     expect(responses).toEqual(new Set(['insert-below']));
   });
 
@@ -63,10 +63,10 @@ test.describe('AIAction/Summarize', () => {
   }) => {
     const { summarize } = await utils.editor.askAIWithText(
       page,
-      'Zeshan is a workspace with fully merged docs'
+      'Canvyst is a workspace with fully merged docs'
     );
     const { answer } = await summarize();
-    await expect(answer).toHaveText(/Zeshan/, { timeout: 10000 });
+    await expect(answer).toHaveText(/Canvyst/, { timeout: 10000 });
     const replace = answer.getByTestId('answer-replace');
     await replace.click();
     await utils.chatPanel.waitForHistory(page, [
@@ -79,7 +79,7 @@ test.describe('AIAction/Summarize', () => {
       prompt,
       actionName,
     } = await utils.chatPanel.getLatestAIActionMessage(page);
-    await expect(panelAnswer).toHaveText(/Zeshan/);
+    await expect(panelAnswer).toHaveText(/Canvyst/);
     await expect(prompt).toHaveText(/Summary the follow text/);
     await expect(actionName).toHaveText(/Summary/);
   });

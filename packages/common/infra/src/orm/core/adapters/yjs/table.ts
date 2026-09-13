@@ -22,7 +22,7 @@ import type {
 } from '../types';
 
 /**
- * Yjs Adapter for Zeshan ORM
+ * Yjs Adapter for Canvyst ORM
  *
  * Structure:
  *

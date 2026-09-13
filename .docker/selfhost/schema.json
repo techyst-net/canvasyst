@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Zeshan Application Configuration",
+  "title": "Canvyst Application Configuration",
   "type": "object",
   "properties": {
     "metrics": {
@@ -300,8 +300,8 @@
         },
         "SMTP.sender": {
           "type": "string",
-          "description": "Sender of all the emails (e.g. \"Zeshan Self Hosted &lt;noreply@example.com&gt;\")\n@default \"Zeshan Self Hosted <noreply@example.com>\"\n@environment `MAILER_SENDER`",
-          "default": "Zeshan Self Hosted <noreply@example.com>"
+          "description": "Sender of all the emails (e.g. \"Canvyst Self Hosted &lt;noreply@example.com&gt;\")\n@default \"Canvyst Self Hosted <noreply@example.com>\"\n@environment `MAILER_SENDER`",
+          "default": "Canvyst Self Hosted <noreply@example.com>"
         },
         "SMTP.ignoreTLS": {
           "type": "boolean",
@@ -355,7 +355,7 @@
         },
         "fallbackSMTP.sender": {
           "type": "string",
-          "description": "Sender of all the emails (e.g. \"Zeshan Self Hosted &lt;noreply@example.com&gt;\")\n@default \"\"",
+          "description": "Sender of all the emails (e.g. \"Canvyst Self Hosted &lt;noreply@example.com&gt;\")\n@default \"\"",
           "default": ""
         },
         "fallbackSMTP.ignoreTLS": {
@@ -918,11 +918,11 @@
       "properties": {
         "name": {
           "type": "string",
-          "description": "A recognizable name for the server. Will be shown when connected with Zeshan Desktop.\n@default undefined"
+          "description": "A recognizable name for the server. Will be shown when connected with Canvyst Desktop.\n@default undefined"
         },
         "externalUrl": {
           "type": "string",
-          "description": "Base url of Zeshan server, used for generating external urls.\nDefault to be `[server.protocol]://[server.host][:server.port]` if not specified.\n    \n@default \"\"\n@environment `AFFINE_SERVER_EXTERNAL_URL`",
+          "description": "Base url of Canvyst server, used for generating external urls.\nDefault to be `[server.protocol]://[server.host][:server.port]` if not specified.\n    \n@default \"\"\n@environment `AFFINE_SERVER_EXTERNAL_URL`",
           "default": ""
         },
         "https": {

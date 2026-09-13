@@ -1,4 +1,4 @@
-# Zeshan Monorepo Cli
+# Canvyst Monorepo Cli
 
 ## Start
 
@@ -82,7 +82,7 @@ yarn af web build
 
 > personally, I use 'af'
 
-create file `af` in the root of Zeshan project with the following content
+create file `af` in the root of Canvyst project with the following content
 
 ```bash
 #!/usr/bin/env sh

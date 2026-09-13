@@ -146,7 +146,7 @@ export class AIPanelError extends WithDisposable(LitElement) {
           AIErrorType.Unauthorized,
           () =>
             html` <div class="error-info">
-                You need to login to Zeshan Cloud to continue using Zeshan AI.
+                You need to login to Canvyst Cloud to continue using Canvyst AI.
               </div>
               <div class="action-button-group">
                 <div @click=${this.config.cancel} class="action-button">
@@ -161,8 +161,8 @@ export class AIPanelError extends WithDisposable(LitElement) {
           AIErrorType.PaymentRequired,
           () =>
             html` <div class="error-info">
-                You've reached the current usage cap for Zeshan AI. You can
-                subscribe to Zeshan AI(with free 7-day-trial) to continue the AI
+                You've reached the current usage cap for Canvyst AI. You can
+                subscribe to Canvyst AI(with free 7-day-trial) to continue the AI
                 experience!
               </div>
               <div class="action-button-group">

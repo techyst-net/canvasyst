@@ -101,7 +101,7 @@ export abstract class OAuthProvider {
         headers: {
           ...init?.headers,
           Accept: 'application/json',
-          'User-Agent': 'Zeshan-Server',
+          'User-Agent': 'Canvyst-Server',
         },
       },
       this.fetchOptions(url)

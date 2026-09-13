@@ -13,14 +13,14 @@ interface AppConfig {
 }
 
 const config: CapacitorConfig & AppConfig = {
-  appId: 'zeshan.local',
-  appName: 'Zeshan',
+  appId: 'app.affine.pro',
+  appName: 'Canvyst',
   webDir: 'dist',
   affineVersion: packageJson.version,
   ios: {
-    scheme: 'Zeshan',
+    scheme: 'Canvyst',
     path: '.',
-    appendUserAgent: `iOS Zeshan/${packageJson.version}`,
+    appendUserAgent: `iOS Canvyst/${packageJson.version}`,
     webContentsDebuggingEnabled: true,
     // Silence Capacitor's bridge logging (⚡️ TO JS / ⚡️ To Native -> / ⚡️ [log]).
     loggingBehavior: 'none',

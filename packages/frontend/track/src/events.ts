@@ -801,10 +801,10 @@ export type EventArgs = {
       | 'New Edgeless'
       | 'Start recording meeting'
       | 'Stop recording'
-      | 'Open Zeshan'
-      | 'About Zeshan'
+      | 'Open Canvyst'
+      | 'About Canvyst'
       | 'Meeting Settings'
-      | 'Quit Zeshan Completely';
+      | 'Quit Canvyst Completely';
   };
   mentionMember: {
     type: 'member' | 'invite' | 'more';

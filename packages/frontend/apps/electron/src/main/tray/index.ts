@@ -90,7 +90,7 @@ class TrayState implements Disposable {
     .resize({ width: 18, height: 18 });
 
   // tray's tooltip
-  tooltip: string = 'Zeshan';
+  tooltip: string = 'Canvyst';
 
   constructor() {
     this.icon.setTemplateImage(true);
@@ -252,9 +252,9 @@ class TrayState implements Disposable {
       key: 'secondary',
       getConfig: () => [
         {
-          label: 'Open Zeshan',
+          label: 'Open Canvyst',
           click: () => {
-            logger.info('User action: Open Zeshan');
+            logger.info('User action: Open Canvyst');
             activateMainWindow();
           },
         },
@@ -279,9 +279,9 @@ class TrayState implements Disposable {
         },
         'separator',
         {
-          label: 'Quit Zeshan Completely...',
+          label: 'Quit Canvyst Completely...',
           click: () => {
-            logger.info('User action: Quit Zeshan Completely');
+            logger.info('User action: Quit Canvyst Completely');
             app.quit();
           },
         },

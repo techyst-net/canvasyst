@@ -1,6 +1,6 @@
 # iOS
 
-Zeshan iOS app.
+Canvyst iOS app.
 
 ## Build
 

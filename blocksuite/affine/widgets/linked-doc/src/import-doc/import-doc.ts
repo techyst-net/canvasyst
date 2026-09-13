@@ -193,8 +193,8 @@ export class ImportDoc extends WithDisposable(LitElement) {
           <div>Import</div>
         </header>
         <div>
-          Zeshan will gradually support more file formats for import.
-          <a href="https://zeshan.local" target="_blank"
+          Canvyst will gradually support more file formats for import.
+          <a href="https://canvyst.techyst.net/home/community/" target="_blank"
             >Provide feedback.</a
           >
         </div>
@@ -220,7 +220,7 @@ export class ImportDoc extends WithDisposable(LitElement) {
           </icon-button>
         </div>
         <!-- <div class="footer">
-        <div>Migrate from other versions of Zeshan?</div>
+        <div>Migrate from other versions of Canvyst?</div>
       </div> -->
       </div>
     `;

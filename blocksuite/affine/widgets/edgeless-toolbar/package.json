@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-edgeless-toolbar",
-  "description": "Zeshan edgeless toolbar widget.",
+  "description": "Canvyst edgeless toolbar widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

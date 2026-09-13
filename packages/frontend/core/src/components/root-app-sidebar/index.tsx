@@ -247,7 +247,7 @@ export const RootAppSidebar = memo((): ReactElement => {
           <InviteMembersButton />
           <TemplateDocEntrance />
           <ExternalMenuLinkItem
-            href="https://zeshan.local+Note"
+            href="https://canvyst.techyst.net/home/changelog/"
             icon={<JournalIcon />}
             label={t['com.affine.app-sidebar.learn-more']()}
           />

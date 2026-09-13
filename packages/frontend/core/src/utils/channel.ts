@@ -34,10 +34,10 @@ export const appIconMap = {
 } satisfies Record<Channel, string>;
 
 export const appNames = {
-  stable: 'Zeshan',
-  canary: 'Zeshan Canary',
-  beta: 'Zeshan Beta',
-  internal: 'Zeshan Internal',
+  stable: 'Canvyst',
+  canary: 'Canvyst Canary',
+  beta: 'Canvyst Beta',
+  internal: 'Canvyst Internal',
 } satisfies Record<Channel, string>;
 
 export const appSchemaUrl = z.custom<string>(

@@ -3,9 +3,9 @@ import { Content, P, Template, Title } from './components';
 export default function TestMail() {
   return (
     <Template>
-      <Title>Test Email from Zeshan</Title>
+      <Title>Test Email from Canvyst</Title>
       <Content>
-        <P>This is a test email from your Zeshan instance.</P>
+        <P>This is a test email from your Canvyst instance.</P>
       </Content>
     </Template>
   );

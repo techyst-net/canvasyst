@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const outputRoot = fileURLToPath(
   new URL(
-    '../out/canary/Zeshan-canary-darwin-arm64/Zeshan-canary.app/Contents/Resources',
+    '../out/canary/Canvyst-canary-darwin-arm64/Canvyst-canary.app/Contents/Resources',
     import.meta.url
   )
 );

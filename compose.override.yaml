@@ -1,0 +1,38 @@
+# Canvyst — brand surfaces mounted over the AFFiNE image.
+#
+#   docker compose -f 13-affine.yml -f compose.override.yaml up -d
+#
+# The app shell's HTML and icons live inside the image, so anything copied in
+# with `docker cp` is lost on the next pull. Mounting them keeps the branding
+# across upgrades without maintaining a fork of the image.
+#
+# The HTML shells and icons are mounted; the compiled bundles are rebranded at
+# start-up by rebrand.sh, because their filenames are content-hashed and a mount
+# pinned to one hash would stop applying the moment the image changes.
+name: techyst-13-affine
+services:
+  affine:
+    entrypoint: [/brand/rebrand.sh]
+    command: [node, ./dist/main.js]
+    volumes:
+    # Uploaded images and attachments land here. Without a volume they live in
+    # the container layer and are destroyed by the next `up -d` that recreates
+    # it — silently, since the docs that reference them still load.
+    - affine-storage:/root/.affine
+    - ../../13-affine/brand/rebrand.sh:/brand/rebrand.sh:ro
+    # The HTML shells are NOT mounted. They were, but the files never existed in
+    # brand/, so Docker created empty directories and mounted them over
+    # index.html and selfhost.html — which breaks the app shell outright.
+    # rebrand.sh rewrites the shells in place instead, the same way it handles
+    # the content-hashed bundles, so there is nothing to keep in sync.
+    - ../../13-affine/brand/favicon-32.png:/app/static/favicon-32.png:ro
+    - ../../13-affine/brand/favicon-36.png:/app/static/favicon-36.png:ro
+    - ../../13-affine/brand/favicon-48.png:/app/static/favicon-48.png:ro
+    - ../../13-affine/brand/favicon-72.png:/app/static/favicon-72.png:ro
+    - ../../13-affine/brand/favicon-96.png:/app/static/favicon-96.png:ro
+    - ../../13-affine/brand/favicon-144.png:/app/static/favicon-144.png:ro
+    - ../../13-affine/brand/favicon-192.png:/app/static/favicon-192.png:ro
+    - ../../13-affine/brand/apple-touch-icon.png:/app/static/apple-touch-icon.png:ro
+
+volumes:
+  affine-storage:

@@ -369,12 +369,12 @@ test('tool callback passes transformed args without prototype pollution', async 
     {
       callId: 'call-1',
       name: 'echo',
-      args: JSON.parse('{"value":" Zeshan ","__proto__":{"polluted":true}}'),
+      args: JSON.parse('{"value":" Canvyst ","__proto__":{"polluted":true}}'),
     },
     {}
   );
 
   t.false(result.isError ?? false);
-  t.deepEqual(received, [{ value: 'Zeshan' }]);
+  t.deepEqual(received, [{ value: 'Canvyst' }]);
   t.is((Object.prototype as Record<string, unknown>).polluted, undefined);
 });

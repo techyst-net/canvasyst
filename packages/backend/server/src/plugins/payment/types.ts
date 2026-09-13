@@ -113,7 +113,7 @@ export interface LookupKey {
 
 export interface KnownStripeInvoice {
   /**
-   * User in Zeshan system.
+   * User in Canvyst system.
    */
   userId?: string;
 
@@ -137,7 +137,7 @@ export interface KnownStripeInvoice {
 
 export interface KnownStripeSubscription {
   /**
-   * User in Zeshan system.
+   * User in Canvyst system.
    */
   userId?: string;
 
@@ -181,48 +181,48 @@ export const DEFAULT_PRICES = new Map([
   [
     `${SubscriptionPlan.Pro}_${SubscriptionRecurring.Monthly}`,
     {
-      product: 'Zeshan Pro',
+      product: 'Canvyst Pro',
       price: 799,
     },
   ],
   [
     `${SubscriptionPlan.Pro}_${SubscriptionRecurring.Yearly}`,
     {
-      product: 'Zeshan Pro',
+      product: 'Canvyst Pro',
       price: 8100,
     },
   ],
   [
     `${SubscriptionPlan.Pro}_${SubscriptionRecurring.Lifetime}`,
     {
-      product: 'Zeshan Pro Believer',
+      product: 'Canvyst Pro Believer',
       price: 49900,
     },
   ],
   // ai
   [
     `${SubscriptionPlan.AI}_${SubscriptionRecurring.Yearly}`,
-    { product: 'Zeshan AI', price: 10680 },
+    { product: 'Canvyst AI', price: 10680 },
   ],
 
   // team
   [
     `${SubscriptionPlan.Team}_${SubscriptionRecurring.Monthly}`,
-    { product: 'Zeshan Team(per seat)', price: 1200 },
+    { product: 'Canvyst Team(per seat)', price: 1200 },
   ],
   [
     `${SubscriptionPlan.Team}_${SubscriptionRecurring.Yearly}`,
-    { product: 'Zeshan Team(per seat)', price: 12000 },
+    { product: 'Canvyst Team(per seat)', price: 12000 },
   ],
 
   // selfhost team
   [
     `${SubscriptionPlan.SelfHostedTeam}_${SubscriptionRecurring.Monthly}`,
-    { product: 'Zeshan Self-hosted Team(per seat)', price: 1200 },
+    { product: 'Canvyst Self-hosted Team(per seat)', price: 1200 },
   ],
   [
     `${SubscriptionPlan.SelfHostedTeam}_${SubscriptionRecurring.Yearly}`,
-    { product: 'Zeshan Self-hosted Team(per seat)', price: 12000 },
+    { product: 'Canvyst Self-hosted Team(per seat)', price: 12000 },
   ],
 ]);
 

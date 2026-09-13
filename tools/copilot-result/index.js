@@ -7,11 +7,11 @@ const { CHANNEL_ID, SLACK_BOT_TOKEN, COPILOT_RESULT, BRANCH_SHA, BRANCH_NAME } =
 
 const { ok } = await new WebClient(SLACK_BOT_TOKEN).chat.postMessage({
   channel: CHANNEL_ID,
-  text: `Zeshan Copilot Test ${COPILOT_RESULT}`,
+  text: `Canvyst Copilot Test ${COPILOT_RESULT}`,
   blocks: render(
-    `# Zeshan Copilot Test ${COPILOT_RESULT}
+    `# Canvyst Copilot Test ${COPILOT_RESULT}
 
-- [${BRANCH_NAME?.replace('refs/heads/', '') || BRANCH_SHA}](https://github.com/toeverything/Zeshan/commit/${BRANCH_SHA})
+- [${BRANCH_NAME?.replace('refs/heads/', '') || BRANCH_SHA}](https://github.com/toeverything/AFFiNE/commit/${BRANCH_SHA})
 `
   ),
 });

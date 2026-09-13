@@ -14,7 +14,7 @@ export const SeeAllLink = () => {
   return (
     <a
       className={styles.allPlansLink}
-      href="https://zeshan.local"
+      href="https://canvyst.techyst.net/home/support/"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -61,7 +61,7 @@ export interface PlanCardProps {
   scrollRef?: React.RefObject<HTMLDivElement>;
 }
 export const CloudPlanLayout = ({
-  title = 'Zeshan Cloud',
+  title = 'Canvyst Cloud',
   caption,
   select,
   toggle,

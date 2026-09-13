@@ -51,10 +51,10 @@ async function resolveWhitelistedLocalPath(filepath: string) {
 }
 
 const apiBaseByBuildType: Record<typeof buildType, string> = {
-  stable: 'https://zeshan.local',
-  beta: 'https://zeshan.local',
-  internal: 'https://zeshan.local',
-  canary: 'https://zeshan.local',
+  stable: 'https://app.affine.pro',
+  beta: 'https://insider.affine.pro',
+  internal: 'https://insider.affine.pro',
+  canary: 'https://affine.fail',
 };
 
 function resolveApiBaseUrl() {
@@ -203,7 +203,7 @@ function allowCors(
   headers: Record<string, string[]>,
   origin: string = 'assets://.'
 ) {
-  // Signed blob URLs redirect to *.zeshan.local without CORS headers.
+  // Signed blob URLs redirect to *.usercontent.affine.pro without CORS headers.
   setHeader(headers, 'Access-Control-Allow-Origin', origin);
   setHeader(headers, 'Access-Control-Allow-Credentials', 'true');
   setHeader(headers, 'Access-Control-Allow-Methods', 'GET, HEAD, PUT, OPTIONS');

@@ -138,7 +138,7 @@ mod tests {
             "attachments": [
               {
                 "kind": "url",
-                "url": "https://zeshan.local"
+                "url": "https://affine.pro/image.png"
               }
             ]
           },
@@ -175,7 +175,7 @@ mod tests {
               {
                 "type": "image",
                 "source": {
-                  "url": "https://zeshan.local",
+                  "url": "https://affine.pro/image.png",
                   "media_type": "image/png"
                 }
               }
@@ -279,7 +279,7 @@ mod tests {
             "attachments": [
               {
                 "kind": "url",
-                "url": "https://zeshan.local",
+                "url": "https://affine.pro/doc.pdf",
                 "mimeType": "application/pdf"
               }
             ]
@@ -310,7 +310,7 @@ mod tests {
             "attachments": [
               {
                 "kind": "url",
-                "url": "https://zeshan.local",
+                "url": "https://affine.pro/image.png",
                 "mimeType": "image/png"
               }
             ]
@@ -340,7 +340,7 @@ mod tests {
           "attachments": [
             {
               "kind": "url",
-              "url": "https://zeshan.local"
+              "url": "https://affine.pro/image.png"
             },
             {
               "kind": "file_handle",

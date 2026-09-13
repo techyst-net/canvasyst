@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the Zeshan iOS application built with Capacitor, React, and TypeScript. It's a hybrid mobile app that wraps a React web application in a native iOS shell.
+This is the Canvyst iOS application built with Capacitor, React, and TypeScript. It's a hybrid mobile app that wraps a React web application in a native iOS shell.
 
 ## Development Commands
 

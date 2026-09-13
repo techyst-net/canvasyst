@@ -338,7 +338,7 @@ pub fn read_all_doc_ids_from_root_doc(doc_bin: Buffer, include_trash: Option<boo
   Ok(result)
 }
 
-/// Converts markdown content to Zeshan-compatible y-octo document binary.
+/// Converts markdown content to Canvyst-compatible y-octo document binary.
 ///
 /// # Arguments
 /// * `title` - The document title

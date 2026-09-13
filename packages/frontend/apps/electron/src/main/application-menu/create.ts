@@ -254,7 +254,7 @@ export function createApplicationMenu() {
           click: async () => {
             // oxlint-disable-next-line no-var-requires
             const { shell } = require('electron');
-            await shell.openExternal('https://zeshan.local');
+            await shell.openExternal('https://canvyst.techyst.net/home');
           },
         },
         {
@@ -276,7 +276,7 @@ export function createApplicationMenu() {
             // oxlint-disable-next-line no-var-requires
             const { shell } = require('electron');
             await shell.openExternal(
-              'https://zeshan.local你好'
+              'https://docs.affine.pro/docs/hello-bonjour-aloha-你好'
             );
           },
         },

@@ -7,7 +7,7 @@ export async function affineSnapshot(collection: Workspace, id: string) {
   const store = doc.getStore();
   // Add root block and surface block at root level
   const rootId = store.addBlock('affine:page', {
-    title: new Text('Zeshan Snapshot Test'),
+    title: new Text('Canvyst Snapshot Test'),
   });
   store.addBlock('affine:surface', {}, rootId);
 
@@ -20,5 +20,5 @@ export async function affineSnapshot(collection: Workspace, id: string) {
 }
 
 affineSnapshot.id = 'affine-snapshot';
-affineSnapshot.displayName = 'Zeshan Snapshot Test';
-affineSnapshot.description = 'Zeshan Snapshot Test';
+affineSnapshot.displayName = 'Canvyst Snapshot Test';
+affineSnapshot.description = 'Canvyst Snapshot Test';

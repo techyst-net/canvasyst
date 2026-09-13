@@ -104,3 +104,6 @@ storageState.json
 # Per-deployment self-host config (may contain credentials)
 .docker/selfhost/config.json
 .docker/selfhost/.env
+
+# Runtime configuration: holds live database and Redis credentials.
+.env

@@ -99,10 +99,12 @@ const FeedbackIcon = ({ type }: { type: Flag['feedbackType'] }) => {
   }
 };
 
+// Feedback on experimental features comes to us, not to upstream's trackers.
+// BUILD_CONFIG.discordUrl is the community page; there is no Discord server.
 const feedbackLink: Record<NonNullable<Flag['feedbackType']>, string> = {
   discord: BUILD_CONFIG.discordUrl,
-  email: 'mailto:support@toeverything.info',
-  github: 'https://github.com/toeverything/Zeshan/issues',
+  email: 'mailto:support@techyst.net',
+  github: BUILD_CONFIG.githubUrl,
 };
 
 const ExperimentalFeaturesItem = ({

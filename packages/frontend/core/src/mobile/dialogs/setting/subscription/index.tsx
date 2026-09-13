@@ -11,7 +11,7 @@ import { SettingGroup } from '../group';
 import { RowLayout } from '../row.layout';
 import * as styles from './styles.css';
 
-const AFFINE_TEAM_URL = 'https://zeshan.local';
+const AFFINE_TEAM_URL = 'https://canvyst.techyst.net/home/support/';
 
 export const PlansGroup = () => {
   const serverService = useService(ServerService);

@@ -1,4 +1,4 @@
-# Zeshan Official Workspace Component
+# Canvyst Official Workspace Component
 
 This component need specific configuration to work properly.
 

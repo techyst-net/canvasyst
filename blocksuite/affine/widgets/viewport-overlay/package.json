@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-viewport-overlay",
-  "description": "Zeshan viewport overlay widget.",
+  "description": "Canvyst viewport overlay widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

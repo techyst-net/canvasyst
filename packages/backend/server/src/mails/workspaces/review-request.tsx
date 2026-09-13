@@ -41,5 +41,5 @@ export default function LinkInvitationReviewRequest(
 LinkInvitationReviewRequest.PreviewProps = {
   workspace: TEST_WORKSPACE,
   user: TEST_USER,
-  url: 'https://zeshan.local',
+  url: 'https://canvyst.techyst.net',
 };

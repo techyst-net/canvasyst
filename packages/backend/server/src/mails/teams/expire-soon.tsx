@@ -38,5 +38,5 @@ export default function TeamExpireSoon(props: TeamExpireSoonProps) {
 TeamExpireSoon.PreviewProps = {
   workspace: TEST_WORKSPACE,
   expirationDate: new Date('2025-01-01T00:00:00Z'),
-  url: 'https://zeshan.local',
+  url: 'https://canvyst.techyst.net',
 };

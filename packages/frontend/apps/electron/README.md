@@ -1,8 +1,8 @@
-# Zeshan Electron App
+# Canvyst Electron App
 
 ## Development
 
-To run Zeshan Desktop Client Application locally, run the following commands:
+To run Canvyst Desktop Client Application locally, run the following commands:
 
 ```sh
 # in repo root

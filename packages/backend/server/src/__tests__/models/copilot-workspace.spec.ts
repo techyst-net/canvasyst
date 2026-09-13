@@ -184,7 +184,7 @@ test('workspace artifacts deduplicate bytes and remain workspace isolated', asyn
     data: {
       userId: user.id,
       workspaceId: otherWorkspace.id,
-      promptName: 'Chat With Zeshan AI',
+      promptName: 'Chat With Canvyst AI',
     },
   });
   const message = await t.context.db.aiSessionMessage.create({
@@ -233,7 +233,7 @@ test('workspace artifacts deduplicate bytes and remain workspace isolated', asyn
     data: {
       userId: user.id,
       workspaceId: workspace.id,
-      promptName: 'Chat With Zeshan AI',
+      promptName: 'Chat With Canvyst AI',
     },
   });
   const retainedMessage = await t.context.db.aiSessionMessage.create({

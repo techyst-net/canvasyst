@@ -14,22 +14,22 @@ export const OthersGroup = () => {
       />
       <RowLayout
         label={t['com.affine.mobile.setting.others.github']()}
-        href="https://github.com/toeverything/Zeshan"
+        href="https://github.com/toeverything/AFFiNE"
       />
 
       <RowLayout
         label={t['com.affine.mobile.setting.others.website']()}
-        href="https://zeshan.local"
+        href="https://canvyst.techyst.net/home"
       />
 
       <RowLayout
         label={t['com.affine.mobile.setting.others.privacy']()}
-        href="https://zeshan.local"
+        href="https://canvyst.techyst.net/home/privacy/"
       />
 
       <RowLayout
         label={t['com.affine.mobile.setting.others.terms']()}
-        href="https://zeshan.local"
+        href="https://canvyst.techyst.net/home/terms/"
       />
     </SettingGroup>
   );

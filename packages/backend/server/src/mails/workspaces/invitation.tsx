@@ -37,5 +37,5 @@ export default function Invitation(props: InvitationProps) {
 Invitation.PreviewProps = {
   user: TEST_USER,
   workspace: TEST_WORKSPACE,
-  url: 'https://zeshan.local',
+  url: 'https://canvyst.techyst.net',
 };

@@ -58,7 +58,7 @@ export const EnableCloudPanel = ({
         onClick={confirmEnableCloudAndClose}
         style={{ marginTop: '12px' }}
       >
-        {t['Enable Zeshan Cloud']()}
+        {t['Enable Canvyst Cloud']()}
       </Button>
     </SettingRow>
   );

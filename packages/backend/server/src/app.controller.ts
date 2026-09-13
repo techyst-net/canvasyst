@@ -11,7 +11,7 @@ export class AppController {
   info() {
     return {
       compatibility: env.version,
-      message: `Zeshan ${env.version} Server`,
+      message: `Canvyst ${env.version} Server`,
       type: env.DEPLOYMENT_TYPE,
       flavor: env.FLAVOR,
     };

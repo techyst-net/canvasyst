@@ -47,7 +47,7 @@ const errorMessage = (error?: string) => {
     case 'destination-not-found':
       return 'One or more selected tags or the collection no longer exist.';
     case 'offline-confirmation-required':
-      return 'Zeshan could not confirm the latest workspace state.';
+      return 'Canvyst could not confirm the latest workspace state.';
     case 'attachment-missing':
       return 'The shared image is no longer available.';
     default:
@@ -547,7 +547,7 @@ export const ShareImportController = ({
               {selectedWorkspaceName}
             </h2>
             <p className={styles.confirmationText}>
-              Zeshan could not confirm that this workspace, your permissions,
+              Canvyst could not confirm that this workspace, your permissions,
               and its destinations are current online. Saving will use the most
               recent data available on this device.
             </p>

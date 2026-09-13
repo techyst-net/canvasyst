@@ -56,7 +56,7 @@ export const CreateAdmin = ({
             Create Administrator Account
           </h1>
           <p className="text-sm text-muted-foreground">
-            This account can also be used to log in as an Zeshan user.
+            This account can also be used to log in as an Canvyst user.
           </p>
         </div>
         <div className="flex flex-col gap-9">

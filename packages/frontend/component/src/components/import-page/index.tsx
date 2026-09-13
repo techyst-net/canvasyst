@@ -46,9 +46,9 @@ export const ImportPage = ({
     <div className={importPageBodyStyle}>
       <div className="title">Import</div>
       <span>
-        Zeshan will gradually support more and more file types for import.&nbsp;
+        Canvyst will gradually support more and more file types for import.&nbsp;
         <a
-          href="https://zeshan.local"
+          href="https://canvyst.techyst.net/home/community/"
           target="_blank"
           rel="noreferrer"
         >
@@ -72,7 +72,7 @@ export const ImportPage = ({
         title="Notion"
         right={
           <Tooltip
-            content={'Learn how to Import your Notion pages into Zeshan.'}
+            content={'Learn how to Import your Notion pages into Canvyst.'}
           >
             <HelpIcon width={20} height={20} />
           </Tooltip>

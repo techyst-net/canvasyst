@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-edgeless-selected-rect",
-  "description": "Zeshan edgeless selected-rect widget.",
+  "description": "Canvyst edgeless selected-rect widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

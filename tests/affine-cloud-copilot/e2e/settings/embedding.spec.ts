@@ -74,7 +74,7 @@ test.describe('AISettings/Embedding', () => {
               serverConfig: {
                 version: '1.0.0',
                 baseUrl: 'http://localhost:8080',
-                name: 'Zeshan',
+                name: 'Canvyst',
                 features: [],
                 type: 'cloud',
                 initialized: true,

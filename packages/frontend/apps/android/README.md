@@ -1,6 +1,6 @@
 # Android
 
-Zeshan Android app.
+Canvyst Android app.
 
 ## Setup
 

@@ -6,17 +6,20 @@ export interface ProductMapping {
   recurring: SubscriptionRecurring;
 }
 
-// default whitelist mapping per PRD
+// default whitelist mapping per PRD.
+// These are store product identifiers registered with RevenueCat, not
+// display names — they must match the store exactly and are deliberately
+// left at their upstream values.
 export const DEFAULT_PRODUCT_MAP: Record<string, ProductMapping> = {
-  'zeshan.local.Monthly': {
+  'affine.pro.Monthly': {
     plan: SubscriptionPlan.Pro,
     recurring: SubscriptionRecurring.Monthly,
   },
-  'zeshan.local.Annual': {
+  'affine.pro.Annual': {
     plan: SubscriptionPlan.Pro,
     recurring: SubscriptionRecurring.Yearly,
   },
-  'zeshan.local.ai.Annual': {
+  'affine.pro.ai.Annual': {
     plan: SubscriptionPlan.AI,
     recurring: SubscriptionRecurring.Yearly,
   },

@@ -1,3 +1,3 @@
 # web
 
-Zeshan Desktop Edition Web app.
+Canvyst Desktop Edition Web app.

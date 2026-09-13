@@ -7,7 +7,7 @@ export type ChangePasswordProps = {
 export default function ChangePassword(props: ChangePasswordProps) {
   return (
     <Template>
-      <Title>Modify your Zeshan password</Title>
+      <Title>Modify your Canvyst password</Title>
       <Content>
         <P>
           Click the button below to reset your password. The magic link will
@@ -20,5 +20,5 @@ export default function ChangePassword(props: ChangePasswordProps) {
 }
 
 ChangePassword.PreviewProps = {
-  url: 'https://zeshan.local',
+  url: 'https://canvyst.techyst.net',
 };

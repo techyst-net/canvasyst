@@ -67,7 +67,7 @@ export class AuthService implements OnApplicationBootstrap {
   private getServerName() {
     return (
       this.config.server.name ??
-      (env.selfhosted ? 'Zeshan Self-hosted' : 'Zeshan Cloud')
+      (env.selfhosted ? 'Canvyst Self-hosted' : 'Canvyst Cloud')
     );
   }
 

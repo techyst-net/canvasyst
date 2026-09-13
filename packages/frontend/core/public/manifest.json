@@ -1,7 +1,7 @@
 {
-  "name": "Zeshan: There can be more than Notion and Miro.",
-  "short_name": "Zeshan",
-  "description": "Zeshan is a workspace with fully merged docs, whiteboards and databases. Get more things done, your creativity isn’t monotone.",
+  "name": "Canvyst: docs and whiteboard in one workspace",
+  "short_name": "Canvyst",
+  "description": "Canvyst puts documents and an infinite canvas on the same page. Plan in prose, think in diagrams, and keep the reasoning attached to the work.",
   "start_url": "/?source=pwa",
   "background_color": "#ffffff",
   "display": "standalone",

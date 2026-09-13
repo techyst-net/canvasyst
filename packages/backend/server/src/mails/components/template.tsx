@@ -18,7 +18,7 @@ import { Text as EmailText } from '@react-email/text';
 const BRAND_ORIGIN = (
   process.env.AFFINE_SERVER_EXTERNAL_URL ??
   process.env.SERVER_EXTERNAL_URL ??
-  'https://zeshan.local'
+  'https://canvyst.techyst.net'
 ).replace(/\/+$/, '');
 import type { PropsWithChildren } from 'react';
 
@@ -227,7 +227,7 @@ export function Template(props: PropsWithChildren) {
             <Link href={BRAND_ORIGIN}>
               <Img
                 src={`${BRAND_ORIGIN}/favicon.png`}
-                alt="Zeshan"
+                alt="Canvyst"
                 height="32px"
               />
             </Link>

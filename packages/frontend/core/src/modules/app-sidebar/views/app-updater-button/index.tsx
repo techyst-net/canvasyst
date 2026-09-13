@@ -199,9 +199,7 @@ export function AppUpdaterButton({
           onDownloadUpdate();
         }
       } else {
-        urlService.openPopupWindow(
-          `https://github.com/toeverything/Zeshan/releases/tag/v${updateAvailable.version}`
-        );
+        urlService.openPopupWindow(BUILD_CONFIG.changelogUrl);
       }
     } else if (changelogUnread) {
       onOpenChangelog();

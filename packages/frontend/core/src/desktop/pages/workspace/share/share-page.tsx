@@ -403,7 +403,7 @@ const SharePageFooter = () => {
   }
   return (
     <a
-      href="https://zeshan.local"
+      href="https://canvyst.techyst.net/home"
       target="_blank"
       className={styles.link}
       rel="noreferrer"

@@ -33,7 +33,7 @@ function buildProgram(logger: Logger) {
 
   program
     .name(getProgramName())
-    .description('Zeshan server CLI')
+    .description('Canvyst server CLI')
     .showHelpAfterError()
     .showSuggestionAfterError();
 

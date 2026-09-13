@@ -74,7 +74,7 @@ export const ScrollableLayout = ({
         <div className={styles.linkGroup}>
           <a
             className={styles.link}
-            href="https://zeshan.local"
+            href="https://canvyst.techyst.net/home/terms/"
             target="_blank"
             rel="noreferrer"
           >
@@ -83,7 +83,7 @@ export const ScrollableLayout = ({
           <Divider orientation="vertical" />
           <a
             className={styles.link}
-            href="https://zeshan.local"
+            href="https://canvyst.techyst.net/home/privacy/"
             target="_blank"
             rel="noreferrer"
           >

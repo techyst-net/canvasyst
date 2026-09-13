@@ -13,7 +13,7 @@ export const ShareFooter = () => {
         </div>
         <a
           className={styles.getStartLink}
-          href="https://zeshan.local"
+          href="https://canvyst.techyst.net/home"
           target="_blank"
           rel="noreferrer"
         >

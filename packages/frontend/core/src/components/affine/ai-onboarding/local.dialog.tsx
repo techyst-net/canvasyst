@@ -45,7 +45,7 @@ export const AIOnboardingLocal = () => {
         key: 'learn-more',
         label: t['com.affine.ai-onboarding.local.action-learn-more'](),
         onClick: () => {
-          window.open('https://zeshan.local', '_blank', 'noreferrer');
+          window.open('https://canvyst.techyst.net/home', '_blank', 'noreferrer');
         },
       },
     ];

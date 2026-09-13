@@ -63,7 +63,7 @@ export const AIPlan = () => {
                 className={styles.purchaseButton}
                 displayedFrequency="monthly"
               />
-              <a href="https://zeshan.local" target="_blank" rel="noreferrer">
+              <a href="https://canvyst.techyst.net/home" target="_blank" rel="noreferrer">
                 <Button className={styles.learnAIButton}>
                   {t['com.affine.payment.ai.pricing-plan.learn']()}
                 </Button>

@@ -19,7 +19,7 @@ interface OpenAppProps {
 }
 const channel = BUILD_CONFIG.appBuildType;
 const url =
-  'https://zeshan.local' + (channel !== 'stable' ? '/beta-canary' : '');
+  'https://canvyst.techyst.net/home' + (channel !== 'stable' ? '/beta-canary' : '');
 
 export const OpenInAppPage = ({
   urlToOpen,
@@ -66,7 +66,7 @@ export const OpenInAppPage = ({
 
         <div className={styles.topNavLinks}>
           <a
-            href="https://zeshan.local"
+            href="https://canvyst.techyst.net/home"
             target="_blank"
             rel="noreferrer"
             className={styles.topNavLink}
@@ -74,7 +74,7 @@ export const OpenInAppPage = ({
             Official Website
           </a>
           <a
-            href="https://zeshan.local"
+            href="https://canvyst.techyst.net/home/changelog/"
             target="_blank"
             rel="noreferrer"
             className={styles.topNavLink}
@@ -82,7 +82,7 @@ export const OpenInAppPage = ({
             Blog
           </a>
           <a
-            href="https://zeshan.local"
+            href="https://canvyst.techyst.net/home"
             target="_blank"
             rel="noreferrer"
             className={styles.topNavLink}

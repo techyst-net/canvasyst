@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-note-slicer",
-  "description": "Zeshan note slicer widget.",
+  "description": "Canvyst note slicer widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

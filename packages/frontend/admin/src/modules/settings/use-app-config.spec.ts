@@ -80,7 +80,7 @@ describe('useAppConfig', () => {
     mocked.setQueryState({
       appConfig: {
         server: {
-          name: 'Zeshan',
+          name: 'Canvyst',
           hosts: ['localhost'],
         },
         auth: {
@@ -114,12 +114,12 @@ describe('useAppConfig', () => {
     const { result } = renderHook(() => useAppConfig());
 
     act(() => {
-      result.current.update('server/name', 'Zeshan Cloud');
+      result.current.update('server/name', 'Canvyst Cloud');
     });
     expect(result.current.isGroupDirty('server')).toBe(true);
 
     act(() => {
-      result.current.update('server/name', 'Zeshan');
+      result.current.update('server/name', 'Canvyst');
     });
     expect(result.current.isGroupDirty('server')).toBe(false);
   });
@@ -128,7 +128,7 @@ describe('useAppConfig', () => {
     const { result } = renderHook(() => useAppConfig());
 
     act(() => {
-      result.current.update('server/name', 'Zeshan Cloud');
+      result.current.update('server/name', 'Canvyst Cloud');
       result.current.update('auth/allowSignup', false);
     });
 
@@ -141,7 +141,7 @@ describe('useAppConfig', () => {
 
     expect(result.current.isGroupDirty('server')).toBe(false);
     expect(result.current.isGroupDirty('auth')).toBe(true);
-    expect(result.current.patchedAppConfig.server.name).toBe('Zeshan');
+    expect(result.current.patchedAppConfig.server.name).toBe('Canvyst');
     expect(result.current.getGroupVersion('server')).toBe(1);
   });
 
@@ -149,14 +149,14 @@ describe('useAppConfig', () => {
     const { result } = renderHook(() => useAppConfig());
 
     act(() => {
-      result.current.update('server/name', 'Zeshan Cloud');
+      result.current.update('server/name', 'Canvyst Cloud');
       result.current.update('auth/allowSignup', false);
     });
 
     mocked.saveUpdatesMock.mockResolvedValue({
       updateAppConfig: {
         server: {
-          name: 'Zeshan Cloud',
+          name: 'Canvyst Cloud',
         },
       },
     });
@@ -170,13 +170,13 @@ describe('useAppConfig', () => {
         {
           module: 'server',
           key: 'name',
-          value: 'Zeshan Cloud',
+          value: 'Canvyst Cloud',
         },
       ],
     });
     expect(result.current.isGroupDirty('server')).toBe(false);
     expect(result.current.isGroupDirty('auth')).toBe(true);
-    expect(result.current.patchedAppConfig.server.name).toBe('Zeshan Cloud');
+    expect(result.current.patchedAppConfig.server.name).toBe('Canvyst Cloud');
     expect(result.current.getGroupVersion('server')).toBe(1);
     expect(mocked.notifySuccessMock).toHaveBeenCalledTimes(1);
   });

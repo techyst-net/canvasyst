@@ -362,7 +362,7 @@ export const test = base.extend<{
         electronRoot.join('package.json').value
       );
       packageJson.name = '@affine/electron-test-' + id;
-      packageJson.productName = 'Zeshan Test ' + id;
+      packageJson.productName = 'Canvyst Test ' + id;
       packageJson.main = './main.js';
       await fs.writeJSON(clonedDist + '/package.json', packageJson);
 

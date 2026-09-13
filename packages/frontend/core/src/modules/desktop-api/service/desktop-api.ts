@@ -131,7 +131,7 @@ export class DesktopApiService extends Service {
           targetServer = defaultServerService.server;
         }
         if (!targetServer) {
-          throw new Error('Zeshan Cloud server not found');
+          throw new Error('Canvyst Cloud server not found');
         }
         const authService = targetServer.scope.get(AuthService);
 

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <component type="desktop-application">
   <id>affine</id>
-  <name>Zeshan</name>
+  <name>Canvyst</name>
   <summary>Productivity and note-taking app</summary>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>MIT AND LicenseRef-proprietary=https://github.com/toeverything/Zeshan/blob/canary/LICENSE</project_license>
-  <url type="homepage">https://zeshan.local</url>
-  <url type="bugtracker">https://github.com/toeverything/Zeshan/issues</url>
-  <url type="help">https://zeshan.local</url>
-  <url type="vcs-browser">https://github.com/toeverything/Zeshan</url>
-  <url type="contribute">https://zeshan.local</url>
+  <project_license>MIT AND LicenseRef-proprietary=https://github.com/toeverything/AFFiNE/blob/canary/LICENSE</project_license>
+  <url type="homepage">https://affine.pro</url>
+  <url type="bugtracker">https://github.com/toeverything/AFFiNE/issues</url>
+  <url type="help">https://docs.affine.pro/</url>
+  <url type="vcs-browser">https://github.com/toeverything/AFFiNE</url>
+  <url type="contribute">https://docs.affine.pro/contributing</url>
   <developer id="pro.affine.app">
     <name>affine</name>
   </developer>
@@ -39,7 +39,7 @@
   </supports>
   <description>
     <p>Write, Draw, Plan, All at Once. With AI.</p>
-    <p>Zeshan is a workspace with fully merged docs, whiteboards and databases. Get more things done, your creativity isn’t monotone.</p>
+    <p>Canvyst is a workspace with fully merged docs, whiteboards and databases. Get more things done, your creativity isn’t monotone.</p>
     <p>Features</p>
     <ul>
       <li>Write your way to better productivity. Build up your content like blocks and let your ideas run wild.</li>
@@ -51,21 +51,21 @@
   <launchable type="desktop-id">affine.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://zeshan.local</image>
+      <image>https://affine.pro/overview/Write.jpg</image>
       <caption>Document writing interface with block-based editing</caption>
     </screenshot>
     <screenshot>
-      <image>https://zeshan.local</image>
+      <image>https://affine.pro/overview/Draw.jpg</image>
       <caption>Whiteboard drawing and visualization capabilities</caption>
     </screenshot>
     <screenshot>
-      <image>https://zeshan.local</image>
+      <image>https://affine.pro/overview/Plan.jpg</image>
       <caption>Project planning and task management view</caption>
     </screenshot>
   </screenshots>
   <releases>
     <release version="0.27.0" date="2026-07-14">
-      <url>https://github.com/toeverything/Zeshan/releases/tag/v0.27.0</url>
+      <url>https://github.com/toeverything/AFFiNE/releases/tag/v0.27.0</url>
     </release>
   </releases>
 </component>

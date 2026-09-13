@@ -38,7 +38,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
               ? 'http://localhost:8080'
               : location.origin,
             config: {
-              serverName: 'Zeshan Cloud',
+              serverName: 'Canvyst Cloud',
               features: [
                 ServerFeature.Indexer,
                 ServerFeature.Copilot,
@@ -51,7 +51,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                 OAuthProviderType.Google,
                 OAuthProviderType.Apple,
               ],
-              type: ServerDeploymentType.Zeshan,
+              type: ServerDeploymentType.Affine,
               credentialsRequirement: {
                 password: {
                   minLength: 8,
@@ -67,11 +67,11 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
               id: 'affine-cloud',
               baseUrl: BUILD_CONFIG.isNative
                 ? BUILD_CONFIG.isIOS
-                  ? 'https://zeshan.local'
-                  : 'https://zeshan.local'
+                  ? 'https://canvyst.techyst.net'
+                  : 'https://canvyst.techyst.net'
                 : location.origin,
               config: {
-                serverName: 'Zeshan Cloud',
+                serverName: 'Canvyst Cloud',
                 features: [
                   ServerFeature.Indexer,
                   ServerFeature.Copilot,
@@ -84,7 +84,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                   OAuthProviderType.Google,
                   OAuthProviderType.Apple,
                 ],
-                type: ServerDeploymentType.Zeshan,
+                type: ServerDeploymentType.Affine,
                 credentialsRequirement: {
                   password: {
                     minLength: 8,
@@ -100,11 +100,11 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                 id: 'affine-cloud',
                 baseUrl: BUILD_CONFIG.isNative
                   ? BUILD_CONFIG.isIOS
-                    ? 'https://zeshan.local'
-                    : 'https://zeshan.local'
+                    ? 'https://canvyst.techyst.net'
+                    : 'https://canvyst.techyst.net'
                   : location.origin,
                 config: {
-                  serverName: 'Zeshan Cloud',
+                  serverName: 'Canvyst Cloud',
                   features: [
                     ServerFeature.Indexer,
                     ServerFeature.Copilot,
@@ -117,7 +117,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                     OAuthProviderType.Google,
                     OAuthProviderType.Apple,
                   ],
-                  type: ServerDeploymentType.Zeshan,
+                  type: ServerDeploymentType.Affine,
                   credentialsRequirement: {
                     password: {
                       minLength: 8,
@@ -131,9 +131,9 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
             ? [
                 {
                   id: 'affine-cloud',
-                  baseUrl: 'https://zeshan.local',
+                  baseUrl: 'https://canvyst.techyst.net',
                   config: {
-                    serverName: 'Zeshan Cloud',
+                    serverName: 'Canvyst Cloud',
                     features: [
                       ServerFeature.Indexer,
                       ServerFeature.Copilot,
@@ -146,7 +146,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                       OAuthProviderType.Google,
                       OAuthProviderType.Apple,
                     ],
-                    type: ServerDeploymentType.Zeshan,
+                    type: ServerDeploymentType.Affine,
                     credentialsRequirement: {
                       password: {
                         minLength: 8,
@@ -161,10 +161,10 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                   {
                     id: 'affine-cloud',
                     baseUrl: BUILD_CONFIG.isNative
-                      ? 'https://zeshan.local'
+                      ? 'https://canvyst.techyst.net'
                       : location.origin,
                     config: {
-                      serverName: 'Zeshan Cloud',
+                      serverName: 'Canvyst Cloud',
                       features: [
                         ServerFeature.Indexer,
                         ServerFeature.Copilot,
@@ -177,7 +177,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                         OAuthProviderType.Google,
                         OAuthProviderType.Apple,
                       ],
-                      type: ServerDeploymentType.Zeshan,
+                      type: ServerDeploymentType.Affine,
                       credentialsRequirement: {
                         password: {
                           minLength: 8,
@@ -196,11 +196,14 @@ export type TelemetryChannel =
   | 'canary'
   | 'local';
 
+// Telemetry is disabled in this deployment (see UPSTREAM.md), so these are
+// not used. They point at our own origin rather than at a third party so that
+// enabling the switch cannot silently start reporting elsewhere.
 const OFFICIAL_TELEMETRY_ENDPOINTS: Record<TelemetryChannel, string> = {
-  stable: 'https://zeshan.local',
-  beta: 'https://zeshan.local',
-  internal: 'https://zeshan.local',
-  canary: 'https://zeshan.local',
+  stable: 'https://canvyst.techyst.net',
+  beta: 'https://canvyst.techyst.net',
+  internal: 'https://canvyst.techyst.net',
+  canary: 'https://canvyst.techyst.net',
   local: 'http://localhost:8080',
 };
 

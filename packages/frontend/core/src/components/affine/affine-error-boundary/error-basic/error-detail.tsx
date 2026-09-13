@@ -142,7 +142,7 @@ export function ContactUS() {
         1: (
           <a
             style={{ color: 'var(--affine-primary-color)' }}
-            href="https://zeshan.local"
+            href="https://canvyst.techyst.net/home/community/"
             target="__blank"
           />
         ),

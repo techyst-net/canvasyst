@@ -1,4 +1,4 @@
-# Zeshan Workspace
+# Canvasyst
 
 A local-first knowledge workspace: docs, whiteboard (edgeless canvas), tables and
 databases in one editor, with real-time collaboration, offline editing and an

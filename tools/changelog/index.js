@@ -159,7 +159,7 @@ const messageHead =
 
 - [${DEPLOYED_URL}](${DEPLOYED_URL})
 `
-    : `# Zeshan Client ${FLAVOR} released`;
+    : `# Canvyst Client ${FLAVOR} released`;
 
 let changelogMessage = `${messageHead}
 

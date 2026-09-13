@@ -14,7 +14,7 @@ use super::{
 // Schema owner map:
 // - adapter-owned: prepared routes and LLM request/response transport payloads.
 // - runtime-owned: execution plan and tool-loop event contracts.
-// - Zeshan-native-owned: model-registry projection and transcript/action
+// - Canvyst-native-owned: model-registry projection and transcript/action
 //   product contracts.
 
 fn invalid_contract(message: impl Into<String>) -> Error {
@@ -116,7 +116,7 @@ pub(crate) fn transcript_result_schema() -> Value {
 
 fn schema_by_name(name: &str) -> Option<Value> {
   match name {
-    // Zeshan-native-owned N-API projection over adapter model registry/matcher
+    // Canvyst-native-owned N-API projection over adapter model registry/matcher
     "capabilityMatchRequest" => Some(generated_schema_for::<CapabilityMatchRequest>()),
     "capabilityMatchResponse" => Some(generated_schema_for::<CapabilityMatchResponse>()),
     "modelConditions" => Some(generated_schema_for::<ModelConditionsContract>()),
@@ -129,7 +129,7 @@ fn schema_by_name(name: &str) -> Option<Value> {
     "toolCallbackRequest" => Some(generated_schema_for::<llm_runtime::ToolCallbackRequest>()),
     "toolCallbackResponse" => Some(generated_schema_for::<llm_runtime::ToolCallbackResponse>()),
     "toolLoopEvent" => Some(generated_schema_for::<llm_runtime::ToolLoopEvent>()),
-    // Zeshan-native-owned product transcript contracts
+    // Canvyst-native-owned product transcript contracts
     "transcriptInput" => Some(transcript_input_schema()),
     "transcriptGeneratedResult" => Some(transcript_generated_result_schema()),
     "transcriptResult" => Some(transcript_result_schema()),

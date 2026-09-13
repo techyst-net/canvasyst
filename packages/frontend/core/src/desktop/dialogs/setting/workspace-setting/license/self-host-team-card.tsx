@@ -415,7 +415,7 @@ const ActionModal = ({
           components={{
             1: (
               <a
-                href="https://zeshan.local"
+                href="https://canvyst.techyst.net/home/support/"
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: cssVarV2('text/link') }}

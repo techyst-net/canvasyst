@@ -1,6 +1,6 @@
 {
   "name": "@blocksuite/affine-widget-linked-doc",
-  "description": "Zeshan linked doc widget.",
+  "description": "Canvyst linked doc widget.",
   "type": "module",
   "scripts": {
     "build": "yarn run -T tsc"

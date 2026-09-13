@@ -389,7 +389,7 @@ export class WorkspaceMcpProvider {
     }
 
     return {
-      name: `Zeshan MCP Server for Workspace ${workspaceId}`,
+      name: `Canvyst MCP Server for Workspace ${workspaceId}`,
       version: '1.0.1',
       tools,
     };

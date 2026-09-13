@@ -13,7 +13,7 @@ import { RunCommand } from './run';
 const cli = new Cli<CliContext>({
   binaryName: 'affine',
   binaryVersion: '0.0.0',
-  binaryLabel: 'Zeshan Monorepo Tools',
+  binaryLabel: 'Canvyst Monorepo Tools',
   enableColors: true,
   enableCapture: true,
 });

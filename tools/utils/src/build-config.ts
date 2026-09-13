@@ -2,6 +2,16 @@ import type { Package } from '@affine-tools/utils/workspace';
 
 import { PackageToDistribution } from './distribution';
 
+/**
+ * The Canvyst product site.
+ *
+ * The workspace application owns the root of its host, so the marketing and
+ * documentation pages are served under /home. Overridable at build time so a
+ * differently-hosted deployment does not need a patch.
+ */
+const CANVASYST_SITE =
+  process.env.CANVASYST_SITE_URL ?? 'https://canvyst.techyst.net/home';
+
 export interface BuildFlags {
   channel: 'stable' | 'beta' | 'internal' | 'canary';
   mode: 'development' | 'production';
@@ -43,12 +53,21 @@ export function getBuildConfig(
         appVersion: pkg.version,
         // editorVersion: pkg.dependencies['@blocksuite/affine'],
         editorVersion: pkg.version,
-        githubUrl: 'https://github.com/toeverything/Zeshan',
-        changelogUrl: 'https://zeshan.local',
-        downloadUrl: 'https://zeshan.local',
-        pricingUrl: 'https://zeshan.local',
-        discordUrl: 'https://zeshan.local',
-        requestLicenseUrl: 'https://zeshan.local',
+        // Outbound links shown in the UI. Every one of these must resolve to a
+        // page that is actually served: they surface in Settings, in the
+        // sidebar and in update prompts, and a dead link there is worse than
+        // no link. The product site lives under /home because the workspace
+        // owns the root of its host.
+        //
+        // githubUrl points at the upstream project, which is where the editor
+        // is actually developed — not at a Canvyst repository that does not
+        // exist.
+        githubUrl: 'https://github.com/toeverything/AFFiNE',
+        changelogUrl: `${CANVASYST_SITE}/changelog/`,
+        downloadUrl: CANVASYST_SITE,
+        pricingUrl: `${CANVASYST_SITE}/#capabilities`,
+        discordUrl: `${CANVASYST_SITE}/community/`,
+        requestLicenseUrl: `${CANVASYST_SITE}/support/`,
         imageProxyUrl: '/api/worker/image-proxy',
         linkPreviewUrl: '/api/worker/link-preview',
         SENTRY_DSN: process.env.SENTRY_DSN ?? '',
@@ -58,14 +77,12 @@ export function getBuildConfig(
       return {
         ...this.stable,
         appBuildType: 'beta' as const,
-        changelogUrl: 'https://github.com/toeverything/Zeshan/releases',
       };
     },
     get internal() {
       return {
         ...this.stable,
         appBuildType: 'internal' as const,
-        changelogUrl: 'https://github.com/toeverything/Zeshan/releases',
       };
     },
     // canary will be aggressive and enable all features
@@ -73,7 +90,6 @@ export function getBuildConfig(
       return {
         ...this.stable,
         appBuildType: 'canary' as const,
-        changelogUrl: 'https://github.com/toeverything/Zeshan/releases',
       };
     },
   };

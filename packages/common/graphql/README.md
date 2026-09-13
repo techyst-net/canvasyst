@@ -1,3 +1,3 @@
 # `GraphQL` client
 
-Auto generated `GraphQL` client for zeshan.local
+Auto generated `GraphQL` client for Canvyst

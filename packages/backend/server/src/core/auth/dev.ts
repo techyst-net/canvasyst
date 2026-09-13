@@ -17,19 +17,19 @@ export async function createDevUsers(
     teamWorkspace?: boolean;
   }[] = [
     {
-      email: 'noreply@zeshan.local',
+      email: 'noreply@example.com',
       name: 'Dev User',
       password: 'dev',
       plans: ['ai'],
     },
     {
-      email: 'noreply@zeshan.local',
+      email: 'noreply@example.com',
       name: 'Pro User',
       password: 'pro',
       plans: ['pro', 'ai'],
     },
     {
-      email: 'noreply@zeshan.local',
+      email: 'noreply@example.com',
       name: 'Team User',
       password: 'team',
       plans: ['pro', 'ai'],

@@ -7,11 +7,11 @@ export type ChangeEmailProps = {
 export default function ChangeEmail(props: ChangeEmailProps) {
   return (
     <Template>
-      <Title>Verify your current email for Zeshan</Title>
+      <Title>Verify your current email for Canvyst</Title>
       <Content>
         <P>
           You recently requested to change the email address associated with
-          your Zeshan account.
+          your Canvyst account.
           <br />
           To complete this process, please click on the verification link below.
         </P>
@@ -25,5 +25,5 @@ export default function ChangeEmail(props: ChangeEmailProps) {
 }
 
 ChangeEmail.PreviewProps = {
-  url: 'https://zeshan.local',
+  url: 'https://canvyst.techyst.net',
 };

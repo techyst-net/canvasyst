@@ -151,7 +151,7 @@ Default.args = {
 };
 
 const selectList = [
-  { name: 'Zeshan', value: '1' },
+  { name: 'Canvyst', value: '1' },
   { name: 'blocksuite', value: '2' },
   { name: 'octobase', value: '3' },
   { name: 'virgo', value: '4' },

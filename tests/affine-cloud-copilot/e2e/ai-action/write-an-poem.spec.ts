@@ -14,7 +14,7 @@ test.describe('AIAction/WriteAnPoemAboutThis', () => {
   }) => {
     const { writePoem } = await utils.editor.askAIWithText(
       page,
-      'Zeshan is a workspace with fully merged docs'
+      'Canvyst is a workspace with fully merged docs'
     );
     const { answer, responses } = await writePoem();
     await expect(answer.locator('text-renderer')).toContainText(/\S/);
@@ -30,7 +30,7 @@ test.describe('AIAction/WriteAnPoemAboutThis', () => {
       async () => {
         await utils.editor.createEdgelessText(
           page,
-          'Zeshan is a workspace with fully merged docs'
+          'Canvyst is a workspace with fully merged docs'
         );
       }
     );
@@ -48,7 +48,7 @@ test.describe('AIAction/WriteAnPoemAboutThis', () => {
       async () => {
         await utils.editor.createEdgelessNote(
           page,
-          'Zeshan is a workspace with fully merged docs'
+          'Canvyst is a workspace with fully merged docs'
         );
       }
     );
@@ -63,10 +63,10 @@ test.describe('AIAction/WriteAnPoemAboutThis', () => {
   }) => {
     const { writePoem } = await utils.editor.askAIWithText(
       page,
-      'Zeshan is a workspace with fully merged docs'
+      'Canvyst is a workspace with fully merged docs'
     );
     const { answer } = await writePoem();
-    await expect(answer).toHaveText(/Zeshan/);
+    await expect(answer).toHaveText(/Canvyst/);
     const replace = answer.getByTestId('answer-replace');
     await replace.click();
     await utils.chatPanel.waitForHistory(page, [
@@ -79,7 +79,7 @@ test.describe('AIAction/WriteAnPoemAboutThis', () => {
       prompt,
       actionName,
     } = await utils.chatPanel.getLatestAIActionMessage(page);
-    await expect(panelAnswer).toHaveText(/Zeshan/);
+    await expect(panelAnswer).toHaveText(/Canvyst/);
     await expect(prompt).toHaveText(/Write a poem about this/);
     await expect(actionName).toHaveText(/Write a poem about this/);
   });
